@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/MDMTrace.h
+
+/home/gacgroup/shuyaota/Geant4/MDMTrace/src/MDMTrace.cpp
+MDMTrace.h
+/home/gacgroup/shuyaota/Geant4/MDMTrace/src/MDMTrace.h
+iostream
+-
+math.h
+-
+stdio.h
+-
+

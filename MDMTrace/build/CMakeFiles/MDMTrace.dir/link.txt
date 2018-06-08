@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -fPIC  -shared -Wl,-soname,libMDMTrace.so -o libMDMTrace.so CMakeFiles/MDMTrace.dir/src/MDMTrace.cpp.o CMakeFiles/MDMTrace.dir/src/RAYTKIN1.F.o -lc -lgfortran 

@@ -1,0 +1,9 @@
+Go to "build" directory.
+(cmake ..)
+Type 'make' to compile.
+
+If you want to run the program locally using visuals, change the first parameter in the config_blah.json file to 'true'. then run the executable with the ccommand "./mdm config_blah.json".
+
+if with no visuals, change back to 'false', and run the same way. This will create one root file called "MDM_0.root".
+
+If wanting to run on the cluster, change the run.mac file for the desired ion and event numbers. then type "spark-submit main.py". (This should be in 'false' mode) 

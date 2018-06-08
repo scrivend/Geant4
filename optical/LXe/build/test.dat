@@ -1,0 +1,4651 @@
+
+*************************************************************
+ Geant4 version Name: geant4-10-01-patch-02 [MT]   (19-June-2015)
+  << in Multi-threaded mode >> 
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRep (HepRepXML)
+  G4HepRepFile (HepRepFile)
+  OpenGLImmediateX (OGLI, OGLIX)
+  OpenGLStoredX (OGL, OGLS, OGLSX)
+  RayTracer (RayTracer)
+  VRML1FILE (VRML1FILE)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByCharge
+  drawByParticleID
+  drawByOriginVolume
+  drawByAttribute
+
+Registered filter factories:
+  chargeFilter
+  particleFilter
+  originVolumeFilter
+  attributeFilter
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+Available colours:
+  black, blue, brown, cyan, gray, green, grey, magenta, red, white, yellow
+
+Construction /LXeDet/pmtSD
+Construction /LXeDet/scintSD
+
+phot:   for  gamma    SubType= 12  BuildTable= 0
+      LambdaPrime table from 200 keV to 10 TeV in 54 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       PhotoElectric :  Emin=        0 eV    Emax=       10 TeV   AngularGenSauterGavrila
+
+compt:   for  gamma    SubType= 13  BuildTable= 1
+      Lambda table from 100 eV  to 1 MeV, 7 bins per decade, spline: 1
+      LambdaPrime table from 1 MeV to 10 TeV in 49 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina :  Emin=        0 eV    Emax=       10 TeV
+
+conv:   for  gamma    SubType= 14  BuildTable= 1
+      Lambda table from 1.022 MeV to 10 TeV, 20 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        BetheHeitler :  Emin=        0 eV    Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=       10 TeV
+
+msc:   for e-    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+eIoni:   for  e-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+msc:   for e+    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+eIoni:   for  e+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      LPM flag: 1 for E > 1 GeV
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+annihil:   for  e+, integral: 1     SubType= 5  BuildTable= 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for mu+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+muIoni:   for  mu+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=      200 keV
+          BetheBloch :  Emin=      200 keV   Emax=        1 GeV
+        MuBetheBloch :  Emin=        1 GeV   Emax=       10 TeV
+
+muBrems:   for  mu+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem :  Emin=        0 eV    Emax=       10 TeV
+
+muPairProd:   for  mu+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      Sampling table 17x1001; from 1 GeV to 10 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for mu-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 1, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+muIoni:   for  mu-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=      200 keV
+          BetheBloch :  Emin=      200 keV   Emax=        1 GeV
+        MuBetheBloch :  Emin=        1 GeV   Emax=       10 TeV
+
+muBrems:   for  mu-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem :  Emin=        0 eV    Emax=       10 TeV
+
+muPairProd:   for  mu-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      Sampling table 17x1001; from 1 GeV to 10 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+====================================================================
+                  HADRONIC PROCESSES SUMMARY (verbose level 1)
+
+---------------------------------------------------
+                           Hadronic Processes for mu-
+
+  Process: muMinusCaptureAtRest
+
+================================================================
+G4WT0 > 
+G4WT0 > ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+G4WT0 >  Local thread RunManagerKernel version Name: geant4-10-01-patch-02 [MT]
+G4WT0 > ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+G4WT0 > 
+G4WT0 > Construction /LXeDet/pmtSD
+G4WT0 > Construction /LXeDet/scintSD
+G4WT1 > 
+G4WT1 > ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+G4WT1 >  Local thread RunManagerKernel version Name: geant4-10-01-patch-02 [MT]
+G4WT1 > ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+G4WT1 > 
+G4WT1 > Construction /LXeDet/pmtSD
+G4WT1 > Construction /LXeDet/scintSD
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes
+ Material : Vacuum
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : Al
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  6.90363 keV    e-  598.345 keV    e+  570.85 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 2     used in the geometry : Yes
+ Material : LXe
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  29.6749 keV    e-  509.223 keV    e+  485.824 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 3     used in the geometry : Yes
+ Material : Glass
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.40367 keV    e-  356.639 keV    e+  344.855 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+### Run 0 starts.
+G4WT0 > ### Run 0 starts on worker thread 0.
+G4WT1 > ### Run 0 starts on worker thread 1.
+G4WT0 > Thread-local run terminated.
+G4WT0 > Run Summary
+G4WT0 >   Number of events processed : 0
+G4WT0 >   User=0s Real=0s Sys=0s
+G4WT1 > 	Energy weighted position of hits in LXe : (0.0527128,0.0149401,-98.1383)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 107
+G4WT1 > 1 20
+G4WT1 > 2 86
+G4WT1 > 3 89
+G4WT1 > 4 27
+G4WT1 > 5 43
+G4WT1 > 6 26
+G4WT1 > 7 58
+G4WT1 > 8 35
+G4WT1 > 9 53
+G4WT1 > 10 57
+G4WT1 > 11 103
+G4WT1 > 12 78
+G4WT1 > 13 84
+G4WT1 > 14 38
+G4WT1 > 15 55
+G4WT1 > 16 80
+G4WT1 > 17 12
+G4WT1 > 18 37
+G4WT1 > 19 20
+G4WT1 > 20 20
+G4WT1 > 21 87
+G4WT1 > 22 18
+G4WT1 > 23 36
+G4WT1 > 24 35
+G4WT1 > 25 40
+G4WT1 > 26 35
+G4WT1 > 27 18
+G4WT1 > 28 35
+G4WT1 > 29 16
+G4WT1 > 30 16
+G4WT1 > 31 25
+G4WT1 > Sum 1489
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1489
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5707
+G4WT1 > 	Number of photons produced by cerenkov in this event : 2
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4220
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT1 > Thread-local run terminated.
+G4WT1 > Run Summary
+G4WT1 >   Number of events processed : 1
+G4WT1 >   User=0.23s Real=0.3s Sys=0s
+ Run terminated.
+Run Summary
+  Number of events processed : 1
+  User=0.23s Real=0.41s Sys=0s
+
+========= Table of registered couples ==============================
+
+Index : 0     used in the geometry : Yes
+ Material : Vacuum
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  990 eV     e-  990 eV     e+  990 eV  proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 1     used in the geometry : Yes
+ Material : Al
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  6.90363 keV    e-  598.345 keV    e+  570.85 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 2     used in the geometry : Yes
+ Material : LXe
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  29.6749 keV    e-  509.223 keV    e+  485.824 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+Index : 3     used in the geometry : Yes
+ Material : Glass
+ Range cuts        :  gamma  1 mm     e-  1 mm     e+  1 mm  proton 1 mm 
+ Energy thresholds :  gamma  2.40367 keV    e-  356.639 keV    e+  344.855 keV proton 100 keV
+ Region(s) which use this couple : 
+    DefaultRegionForTheWorld
+
+====================================================================
+
+### Run 1 starts.
+G4WT0 > ### Run 1 starts on worker thread 0.
+G4WT1 > ### Run 1 starts on worker thread 1.
+G4WT0 > 	Energy weighted position of hits in LXe : (3.62974,-16.3654,-81.3332)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 25
+G4WT0 > 1 70
+G4WT0 > 2 57
+G4WT0 > 3 92
+G4WT0 > 4 82
+G4WT0 > 5 46
+G4WT0 > 6 43
+G4WT0 > 7 59
+G4WT0 > 8 34
+G4WT0 > 9 45
+G4WT0 > 10 16
+G4WT0 > 11 75
+G4WT0 > 12 48
+G4WT0 > 13 39
+G4WT0 > 14 48
+G4WT0 > 15 52
+G4WT0 > 16 69
+G4WT0 > 17 19
+G4WT0 > 18 44
+G4WT0 > 19 37
+G4WT0 > 20 45
+G4WT0 > 21 26
+G4WT0 > 22 55
+G4WT0 > 23 69
+G4WT0 > 24 35
+G4WT0 > 25 56
+G4WT0 > 26 34
+G4WT0 > 27 21
+G4WT0 > 28 21
+G4WT0 > 29 32
+G4WT0 > 30 16
+G4WT0 > 31 22
+G4WT0 > Sum 1432
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1432
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5446
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4014
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (4.59042,8.01403,16.0958)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 61
+G4WT1 > 1 41
+G4WT1 > 2 54
+G4WT1 > 3 54
+G4WT1 > 4 43
+G4WT1 > 5 57
+G4WT1 > 6 36
+G4WT1 > 7 30
+G4WT1 > 8 40
+G4WT1 > 9 52
+G4WT1 > 10 58
+G4WT1 > 11 54
+G4WT1 > 12 48
+G4WT1 > 13 38
+G4WT1 > 14 58
+G4WT1 > 15 50
+G4WT1 > 16 47
+G4WT1 > 17 37
+G4WT1 > 18 67
+G4WT1 > 19 42
+G4WT1 > 20 35
+G4WT1 > 21 41
+G4WT1 > 22 41
+G4WT1 > 23 44
+G4WT1 > 24 40
+G4WT1 > 25 36
+G4WT1 > 26 46
+G4WT1 > 27 45
+G4WT1 > 28 44
+G4WT1 > 29 30
+G4WT1 > 30 27
+G4WT1 > 31 40
+G4WT1 > Sum 1436
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1436
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5419
+G4WT1 > 	Number of photons produced by cerenkov in this event : 1
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 3984
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-9.49745,-0.120336,-96.9849)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 33
+G4WT1 > 1 73
+G4WT1 > 2 63
+G4WT1 > 3 38
+G4WT1 > 4 95
+G4WT1 > 5 50
+G4WT1 > 6 35
+G4WT1 > 7 58
+G4WT1 > 8 53
+G4WT1 > 9 70
+G4WT1 > 10 31
+G4WT1 > 11 88
+G4WT1 > 12 74
+G4WT1 > 13 92
+G4WT1 > 14 25
+G4WT1 > 15 20
+G4WT1 > 16 25
+G4WT1 > 17 39
+G4WT1 > 18 47
+G4WT1 > 19 47
+G4WT1 > 20 30
+G4WT1 > 21 42
+G4WT1 > 22 25
+G4WT1 > 23 39
+G4WT1 > 24 40
+G4WT1 > 25 45
+G4WT1 > 26 28
+G4WT1 > 27 22
+G4WT1 > 28 20
+G4WT1 > 29 18
+G4WT1 > 30 26
+G4WT1 > 31 24
+G4WT1 > Sum 1415
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1415
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5526
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4111
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (0.0102735,0.0683493,-86.5314)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 52
+G4WT0 > 1 59
+G4WT0 > 2 80
+G4WT0 > 3 94
+G4WT0 > 4 88
+G4WT0 > 5 74
+G4WT0 > 6 19
+G4WT0 > 7 54
+G4WT0 > 8 37
+G4WT0 > 9 75
+G4WT0 > 10 26
+G4WT0 > 11 80
+G4WT0 > 12 42
+G4WT0 > 13 29
+G4WT0 > 14 24
+G4WT0 > 15 21
+G4WT0 > 16 26
+G4WT0 > 17 51
+G4WT0 > 18 73
+G4WT0 > 19 40
+G4WT0 > 20 24
+G4WT0 > 21 34
+G4WT0 > 22 44
+G4WT0 > 23 39
+G4WT0 > 24 33
+G4WT0 > 25 22
+G4WT0 > 26 36
+G4WT0 > 27 44
+G4WT0 > 28 48
+G4WT0 > 29 42
+G4WT0 > 30 47
+G4WT0 > 31 16
+G4WT0 > Sum 1473
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1473
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5710
+G4WT0 > 	Number of photons produced by cerenkov in this event : 2
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4239
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-4.13578,-1.21945,-93.7437)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 37
+G4WT1 > 1 78
+G4WT1 > 2 71
+G4WT1 > 3 51
+G4WT1 > 4 26
+G4WT1 > 5 21
+G4WT1 > 6 26
+G4WT1 > 7 44
+G4WT1 > 8 68
+G4WT1 > 9 54
+G4WT1 > 10 30
+G4WT1 > 11 86
+G4WT1 > 12 78
+G4WT1 > 13 29
+G4WT1 > 14 54
+G4WT1 > 15 43
+G4WT1 > 16 18
+G4WT1 > 17 33
+G4WT1 > 18 78
+G4WT1 > 19 77
+G4WT1 > 20 27
+G4WT1 > 21 26
+G4WT1 > 22 41
+G4WT1 > 23 35
+G4WT1 > 24 22
+G4WT1 > 25 18
+G4WT1 > 26 20
+G4WT1 > 27 70
+G4WT1 > 28 24
+G4WT1 > 29 22
+G4WT1 > 30 27
+G4WT1 > 31 22
+G4WT1 > Sum 1356
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1356
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5280
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 3924
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (13.0193,6.5126,-85.8339)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 103
+G4WT0 > 1 25
+G4WT0 > 2 35
+G4WT0 > 3 98
+G4WT0 > 4 62
+G4WT0 > 5 58
+G4WT0 > 6 34
+G4WT0 > 7 87
+G4WT0 > 8 18
+G4WT0 > 9 22
+G4WT0 > 10 40
+G4WT0 > 11 39
+G4WT0 > 12 35
+G4WT0 > 13 41
+G4WT0 > 14 48
+G4WT0 > 15 70
+G4WT0 > 16 46
+G4WT0 > 17 71
+G4WT0 > 18 48
+G4WT0 > 19 61
+G4WT0 > 20 30
+G4WT0 > 21 46
+G4WT0 > 22 25
+G4WT0 > 23 71
+G4WT0 > 24 54
+G4WT0 > 25 24
+G4WT0 > 26 38
+G4WT0 > 27 25
+G4WT0 > 28 29
+G4WT0 > 29 40
+G4WT0 > 30 30
+G4WT0 > 31 15
+G4WT0 > Sum 1468
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1468
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5465
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3997
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-7.83375,6.18719,-50.9441)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 60
+G4WT1 > 1 34
+G4WT1 > 2 31
+G4WT1 > 3 41
+G4WT1 > 4 58
+G4WT1 > 5 46
+G4WT1 > 6 71
+G4WT1 > 7 37
+G4WT1 > 8 26
+G4WT1 > 9 49
+G4WT1 > 10 54
+G4WT1 > 11 60
+G4WT1 > 12 37
+G4WT1 > 13 59
+G4WT1 > 14 54
+G4WT1 > 15 33
+G4WT1 > 16 43
+G4WT1 > 17 61
+G4WT1 > 18 28
+G4WT1 > 19 56
+G4WT1 > 20 51
+G4WT1 > 21 42
+G4WT1 > 22 68
+G4WT1 > 23 60
+G4WT1 > 24 42
+G4WT1 > 25 52
+G4WT1 > 26 24
+G4WT1 > 27 39
+G4WT1 > 28 38
+G4WT1 > 29 30
+G4WT1 > 30 27
+G4WT1 > 31 24
+G4WT1 > Sum 1435
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1435
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5463
+G4WT1 > 	Number of photons produced by cerenkov in this event : 1
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4029
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (0.714328,-0.588629,69.8417)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 47
+G4WT0 > 1 50
+G4WT0 > 2 27
+G4WT0 > 3 72
+G4WT0 > 4 47
+G4WT0 > 5 72
+G4WT0 > 6 27
+G4WT0 > 7 21
+G4WT0 > 8 42
+G4WT0 > 9 62
+G4WT0 > 10 71
+G4WT0 > 11 74
+G4WT0 > 12 57
+G4WT0 > 13 49
+G4WT0 > 14 43
+G4WT0 > 15 61
+G4WT0 > 16 47
+G4WT0 > 17 54
+G4WT0 > 18 44
+G4WT0 > 19 75
+G4WT0 > 20 45
+G4WT0 > 21 58
+G4WT0 > 22 64
+G4WT0 > 23 21
+G4WT0 > 24 31
+G4WT0 > 25 45
+G4WT0 > 26 61
+G4WT0 > 27 65
+G4WT0 > 28 25
+G4WT0 > 29 25
+G4WT0 > 30 19
+G4WT0 > 31 24
+G4WT0 > Sum 1525
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1525
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5486
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3961
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (-24.1857,-9.07199,-47.5253)
+G4WT0 > 	Total energy deposition in scintillator : 130.483 (keV)
+G4WT0 > 0 7
+G4WT0 > 1 7
+G4WT0 > 2 12
+G4WT0 > 3 14
+G4WT0 > 4 32
+G4WT0 > 5 7
+G4WT0 > 6 19
+G4WT0 > 7 8
+G4WT0 > 8 18
+G4WT0 > 9 12
+G4WT0 > 10 11
+G4WT0 > 11 9
+G4WT0 > 12 12
+G4WT0 > 13 7
+G4WT0 > 14 11
+G4WT0 > 15 11
+G4WT0 > 16 10
+G4WT0 > 17 10
+G4WT0 > 18 8
+G4WT0 > 19 6
+G4WT0 > 20 12
+G4WT0 > 21 13
+G4WT0 > 22 13
+G4WT0 > 23 11
+G4WT0 > 24 14
+G4WT0 > 25 12
+G4WT0 > 26 6
+G4WT0 > 27 14
+G4WT0 > 28 5
+G4WT0 > 29 4
+G4WT0 > 30 6
+G4WT0 > 31 6
+G4WT0 > Sum 347
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 347
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 1259
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 912
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-4.35128,-20.492,-56.2078)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 48
+G4WT1 > 1 29
+G4WT1 > 2 26
+G4WT1 > 3 55
+G4WT1 > 4 23
+G4WT1 > 5 52
+G4WT1 > 6 61
+G4WT1 > 7 41
+G4WT1 > 8 67
+G4WT1 > 9 69
+G4WT1 > 10 58
+G4WT1 > 11 49
+G4WT1 > 12 73
+G4WT1 > 13 30
+G4WT1 > 14 43
+G4WT1 > 15 68
+G4WT1 > 16 34
+G4WT1 > 17 29
+G4WT1 > 18 31
+G4WT1 > 19 52
+G4WT1 > 20 49
+G4WT1 > 21 49
+G4WT1 > 22 56
+G4WT1 > 23 48
+G4WT1 > 24 40
+G4WT1 > 25 55
+G4WT1 > 26 29
+G4WT1 > 27 43
+G4WT1 > 28 62
+G4WT1 > 29 23
+G4WT1 > 30 43
+G4WT1 > 31 27
+G4WT1 > Sum 1462
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1462
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5439
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 3977
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (-19.9774,-32.1013,-40.0385)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 74
+G4WT0 > 1 88
+G4WT0 > 2 40
+G4WT0 > 3 110
+G4WT0 > 4 48
+G4WT0 > 5 76
+G4WT0 > 6 42
+G4WT0 > 7 54
+G4WT0 > 8 58
+G4WT0 > 9 34
+G4WT0 > 10 35
+G4WT0 > 11 39
+G4WT0 > 12 33
+G4WT0 > 13 35
+G4WT0 > 14 43
+G4WT0 > 15 78
+G4WT0 > 16 53
+G4WT0 > 17 48
+G4WT0 > 18 51
+G4WT0 > 19 36
+G4WT0 > 20 34
+G4WT0 > 21 34
+G4WT0 > 22 59
+G4WT0 > 23 48
+G4WT0 > 24 24
+G4WT0 > 25 50
+G4WT0 > 26 44
+G4WT0 > 27 17
+G4WT0 > 28 39
+G4WT0 > 29 17
+G4WT0 > 30 31
+G4WT0 > 31 14
+G4WT0 > Sum 1486
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1486
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5390
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3904
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-0.0470649,-0.0484872,-88.2365)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 72
+G4WT1 > 1 44
+G4WT1 > 2 80
+G4WT1 > 3 53
+G4WT1 > 4 79
+G4WT1 > 5 50
+G4WT1 > 6 25
+G4WT1 > 7 31
+G4WT1 > 8 33
+G4WT1 > 9 50
+G4WT1 > 10 51
+G4WT1 > 11 51
+G4WT1 > 12 81
+G4WT1 > 13 55
+G4WT1 > 14 79
+G4WT1 > 15 80
+G4WT1 > 16 71
+G4WT1 > 17 27
+G4WT1 > 18 40
+G4WT1 > 19 20
+G4WT1 > 20 49
+G4WT1 > 21 42
+G4WT1 > 22 18
+G4WT1 > 23 40
+G4WT1 > 24 60
+G4WT1 > 25 50
+G4WT1 > 26 37
+G4WT1 > 27 28
+G4WT1 > 28 31
+G4WT1 > 29 25
+G4WT1 > 30 25
+G4WT1 > 31 28
+G4WT1 > Sum 1505
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1505
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5725
+G4WT1 > 	Number of photons produced by cerenkov in this event : 1
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4221
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (-15.9085,-5.75932,-18.9963)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 51
+G4WT0 > 1 42
+G4WT0 > 2 36
+G4WT0 > 3 49
+G4WT0 > 4 40
+G4WT0 > 5 41
+G4WT0 > 6 47
+G4WT0 > 7 64
+G4WT0 > 8 49
+G4WT0 > 9 44
+G4WT0 > 10 51
+G4WT0 > 11 28
+G4WT0 > 12 70
+G4WT0 > 13 36
+G4WT0 > 14 45
+G4WT0 > 15 33
+G4WT0 > 16 35
+G4WT0 > 17 34
+G4WT0 > 18 66
+G4WT0 > 19 49
+G4WT0 > 20 48
+G4WT0 > 21 50
+G4WT0 > 22 59
+G4WT0 > 23 45
+G4WT0 > 24 46
+G4WT0 > 25 56
+G4WT0 > 26 36
+G4WT0 > 27 42
+G4WT0 > 28 60
+G4WT0 > 29 41
+G4WT0 > 30 39
+G4WT0 > 31 34
+G4WT0 > Sum 1466
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1466
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5701
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4235
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (32.9482,-11.8975,-111.187)
+G4WT1 > 	Total energy deposition in scintillator : 264.763 (keV)
+G4WT1 > 0 72
+G4WT1 > 1 19
+G4WT1 > 2 67
+G4WT1 > 3 22
+G4WT1 > 4 37
+G4WT1 > 5 34
+G4WT1 > 6 15
+G4WT1 > 7 27
+G4WT1 > 8 22
+G4WT1 > 9 6
+G4WT1 > 10 19
+G4WT1 > 11 30
+G4WT1 > 12 11
+G4WT1 > 13 13
+G4WT1 > 14 62
+G4WT1 > 15 10
+G4WT1 > 16 16
+G4WT1 > 17 45
+G4WT1 > 18 8
+G4WT1 > 19 14
+G4WT1 > 20 6
+G4WT1 > 21 18
+G4WT1 > 22 13
+G4WT1 > 23 14
+G4WT1 > 24 19
+G4WT1 > 25 18
+G4WT1 > 26 16
+G4WT1 > 27 8
+G4WT1 > 28 16
+G4WT1 > 29 2
+G4WT1 > 30 5
+G4WT1 > 31 1
+G4WT1 > Sum 685
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 685
+G4WT1 > 	Number of PMTs above threshold(2) : 31
+G4WT1 > 	Number of photons produced by scintillation in this event : 2816
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 2131
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (-3.9875,-18.651,-27.2737)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 48
+G4WT0 > 1 61
+G4WT0 > 2 46
+G4WT0 > 3 53
+G4WT0 > 4 40
+G4WT0 > 5 40
+G4WT0 > 6 43
+G4WT0 > 7 65
+G4WT0 > 8 29
+G4WT0 > 9 51
+G4WT0 > 10 75
+G4WT0 > 11 51
+G4WT0 > 12 42
+G4WT0 > 13 47
+G4WT0 > 14 32
+G4WT0 > 15 56
+G4WT0 > 16 45
+G4WT0 > 17 25
+G4WT0 > 18 48
+G4WT0 > 19 60
+G4WT0 > 20 32
+G4WT0 > 21 53
+G4WT0 > 22 31
+G4WT0 > 23 37
+G4WT0 > 24 63
+G4WT0 > 25 39
+G4WT0 > 26 46
+G4WT0 > 27 62
+G4WT0 > 28 41
+G4WT0 > 29 41
+G4WT0 > 30 34
+G4WT0 > 31 20
+G4WT0 > Sum 1456
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1456
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5537
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4081
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-22.2429,8.99291,-47.4981)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 67
+G4WT1 > 1 49
+G4WT1 > 2 50
+G4WT1 > 3 44
+G4WT1 > 4 47
+G4WT1 > 5 60
+G4WT1 > 6 67
+G4WT1 > 7 32
+G4WT1 > 8 39
+G4WT1 > 9 50
+G4WT1 > 10 67
+G4WT1 > 11 34
+G4WT1 > 12 47
+G4WT1 > 13 31
+G4WT1 > 14 37
+G4WT1 > 15 44
+G4WT1 > 16 48
+G4WT1 > 17 55
+G4WT1 > 18 41
+G4WT1 > 19 62
+G4WT1 > 20 63
+G4WT1 > 21 44
+G4WT1 > 22 18
+G4WT1 > 23 55
+G4WT1 > 24 18
+G4WT1 > 25 39
+G4WT1 > 26 33
+G4WT1 > 27 18
+G4WT1 > 28 53
+G4WT1 > 29 37
+G4WT1 > 30 63
+G4WT1 > 31 25
+G4WT1 > Sum 1437
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1437
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5380
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 3943
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (-0.0365221,0.0370641,-35.2142)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 45
+G4WT0 > 1 68
+G4WT0 > 2 66
+G4WT0 > 3 51
+G4WT0 > 4 58
+G4WT0 > 5 47
+G4WT0 > 6 43
+G4WT0 > 7 67
+G4WT0 > 8 46
+G4WT0 > 9 36
+G4WT0 > 10 38
+G4WT0 > 11 31
+G4WT0 > 12 35
+G4WT0 > 13 61
+G4WT0 > 14 53
+G4WT0 > 15 33
+G4WT0 > 16 46
+G4WT0 > 17 62
+G4WT0 > 18 24
+G4WT0 > 19 62
+G4WT0 > 20 54
+G4WT0 > 21 36
+G4WT0 > 22 33
+G4WT0 > 23 32
+G4WT0 > 24 55
+G4WT0 > 25 74
+G4WT0 > 26 59
+G4WT0 > 27 42
+G4WT0 > 28 46
+G4WT0 > 29 32
+G4WT0 > 30 27
+G4WT0 > 31 57
+G4WT0 > Sum 1519
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1519
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5621
+G4WT0 > 	Number of photons produced by cerenkov in this event : 2
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4104
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (0.0182647,-0.0247404,-73.8877)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 76
+G4WT1 > 1 50
+G4WT1 > 2 51
+G4WT1 > 3 61
+G4WT1 > 4 32
+G4WT1 > 5 36
+G4WT1 > 6 71
+G4WT1 > 7 69
+G4WT1 > 8 52
+G4WT1 > 9 51
+G4WT1 > 10 66
+G4WT1 > 11 49
+G4WT1 > 12 69
+G4WT1 > 13 40
+G4WT1 > 14 25
+G4WT1 > 15 45
+G4WT1 > 16 22
+G4WT1 > 17 18
+G4WT1 > 18 60
+G4WT1 > 19 27
+G4WT1 > 20 62
+G4WT1 > 21 33
+G4WT1 > 22 30
+G4WT1 > 23 55
+G4WT1 > 24 64
+G4WT1 > 25 48
+G4WT1 > 26 24
+G4WT1 > 27 50
+G4WT1 > 28 45
+G4WT1 > 29 26
+G4WT1 > 30 21
+G4WT1 > 31 45
+G4WT1 > Sum 1473
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1473
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5557
+G4WT1 > 	Number of photons produced by cerenkov in this event : 1
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4085
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (-11.3565,-3.3868,69.5859)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 56
+G4WT0 > 1 50
+G4WT0 > 2 37
+G4WT0 > 3 60
+G4WT0 > 4 22
+G4WT0 > 5 31
+G4WT0 > 6 27
+G4WT0 > 7 47
+G4WT0 > 8 54
+G4WT0 > 9 88
+G4WT0 > 10 71
+G4WT0 > 11 65
+G4WT0 > 12 37
+G4WT0 > 13 55
+G4WT0 > 14 42
+G4WT0 > 15 34
+G4WT0 > 16 29
+G4WT0 > 17 56
+G4WT0 > 18 74
+G4WT0 > 19 34
+G4WT0 > 20 52
+G4WT0 > 21 78
+G4WT0 > 22 63
+G4WT0 > 23 36
+G4WT0 > 24 50
+G4WT0 > 25 17
+G4WT0 > 26 81
+G4WT0 > 27 33
+G4WT0 > 28 42
+G4WT0 > 29 45
+G4WT0 > 30 43
+G4WT0 > 31 14
+G4WT0 > Sum 1523
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1523
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5639
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4116
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-12.0637,23.343,-85.3636)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 152
+G4WT1 > 1 168
+G4WT1 > 2 98
+G4WT1 > 3 62
+G4WT1 > 4 45
+G4WT1 > 5 37
+G4WT1 > 6 31
+G4WT1 > 7 15
+G4WT1 > 8 45
+G4WT1 > 9 62
+G4WT1 > 10 41
+G4WT1 > 11 31
+G4WT1 > 12 22
+G4WT1 > 13 69
+G4WT1 > 14 43
+G4WT1 > 15 29
+G4WT1 > 16 44
+G4WT1 > 17 65
+G4WT1 > 18 65
+G4WT1 > 19 25
+G4WT1 > 20 20
+G4WT1 > 21 42
+G4WT1 > 22 51
+G4WT1 > 23 38
+G4WT1 > 24 55
+G4WT1 > 25 24
+G4WT1 > 26 33
+G4WT1 > 27 44
+G4WT1 > 28 23
+G4WT1 > 29 14
+G4WT1 > 30 20
+G4WT1 > 31 14
+G4WT1 > Sum 1527
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1527
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5567
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4040
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (0.815157,1.20767,-49.7417)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 57
+G4WT0 > 1 22
+G4WT0 > 2 17
+G4WT0 > 3 45
+G4WT0 > 4 66
+G4WT0 > 5 24
+G4WT0 > 6 28
+G4WT0 > 7 55
+G4WT0 > 8 53
+G4WT0 > 9 53
+G4WT0 > 10 50
+G4WT0 > 11 59
+G4WT0 > 12 35
+G4WT0 > 13 87
+G4WT0 > 14 47
+G4WT0 > 15 53
+G4WT0 > 16 49
+G4WT0 > 17 38
+G4WT0 > 18 16
+G4WT0 > 19 65
+G4WT0 > 20 48
+G4WT0 > 21 31
+G4WT0 > 22 45
+G4WT0 > 23 21
+G4WT0 > 24 61
+G4WT0 > 25 57
+G4WT0 > 26 56
+G4WT0 > 27 60
+G4WT0 > 28 21
+G4WT0 > 29 50
+G4WT0 > 30 48
+G4WT0 > 31 23
+G4WT0 > Sum 1440
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1440
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5373
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3933
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-19.0025,-8.06892,-5.98339)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 32
+G4WT1 > 1 68
+G4WT1 > 2 49
+G4WT1 > 3 47
+G4WT1 > 4 46
+G4WT1 > 5 47
+G4WT1 > 6 49
+G4WT1 > 7 77
+G4WT1 > 8 49
+G4WT1 > 9 45
+G4WT1 > 10 33
+G4WT1 > 11 48
+G4WT1 > 12 35
+G4WT1 > 13 48
+G4WT1 > 14 41
+G4WT1 > 15 48
+G4WT1 > 16 57
+G4WT1 > 17 58
+G4WT1 > 18 39
+G4WT1 > 19 40
+G4WT1 > 20 32
+G4WT1 > 21 59
+G4WT1 > 22 32
+G4WT1 > 23 37
+G4WT1 > 24 50
+G4WT1 > 25 38
+G4WT1 > 26 43
+G4WT1 > 27 35
+G4WT1 > 28 43
+G4WT1 > 29 33
+G4WT1 > 30 35
+G4WT1 > 31 29
+G4WT1 > Sum 1422
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1422
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5322
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 3900
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (-12.7292,-27.1562,-17.0053)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 46
+G4WT0 > 1 49
+G4WT0 > 2 27
+G4WT0 > 3 53
+G4WT0 > 4 55
+G4WT0 > 5 42
+G4WT0 > 6 38
+G4WT0 > 7 42
+G4WT0 > 8 53
+G4WT0 > 9 59
+G4WT0 > 10 48
+G4WT0 > 11 42
+G4WT0 > 12 85
+G4WT0 > 13 92
+G4WT0 > 14 42
+G4WT0 > 15 44
+G4WT0 > 16 39
+G4WT0 > 17 29
+G4WT0 > 18 47
+G4WT0 > 19 35
+G4WT0 > 20 32
+G4WT0 > 21 42
+G4WT0 > 22 48
+G4WT0 > 23 49
+G4WT0 > 24 43
+G4WT0 > 25 37
+G4WT0 > 26 48
+G4WT0 > 27 36
+G4WT0 > 28 47
+G4WT0 > 29 54
+G4WT0 > 30 45
+G4WT0 > 31 21
+G4WT0 > Sum 1469
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1469
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5334
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3865
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-0.0287469,-0.122755,-109.286)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 89
+G4WT1 > 1 92
+G4WT1 > 2 44
+G4WT1 > 3 27
+G4WT1 > 4 85
+G4WT1 > 5 19
+G4WT1 > 6 72
+G4WT1 > 7 46
+G4WT1 > 8 28
+G4WT1 > 9 19
+G4WT1 > 10 33
+G4WT1 > 11 22
+G4WT1 > 12 86
+G4WT1 > 13 32
+G4WT1 > 14 41
+G4WT1 > 15 43
+G4WT1 > 16 101
+G4WT1 > 17 38
+G4WT1 > 18 27
+G4WT1 > 19 21
+G4WT1 > 20 48
+G4WT1 > 21 12
+G4WT1 > 22 48
+G4WT1 > 23 24
+G4WT1 > 24 35
+G4WT1 > 25 23
+G4WT1 > 26 34
+G4WT1 > 27 82
+G4WT1 > 28 18
+G4WT1 > 29 11
+G4WT1 > 30 79
+G4WT1 > 31 16
+G4WT1 > Sum 1395
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1395
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5576
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4181
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (-12.1191,-3.86856,-104.703)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 75
+G4WT0 > 1 89
+G4WT0 > 2 88
+G4WT0 > 3 55
+G4WT0 > 4 20
+G4WT0 > 5 67
+G4WT0 > 6 39
+G4WT0 > 7 77
+G4WT0 > 8 26
+G4WT0 > 9 100
+G4WT0 > 10 36
+G4WT0 > 11 80
+G4WT0 > 12 38
+G4WT0 > 13 27
+G4WT0 > 14 39
+G4WT0 > 15 95
+G4WT0 > 16 29
+G4WT0 > 17 41
+G4WT0 > 18 26
+G4WT0 > 19 29
+G4WT0 > 20 26
+G4WT0 > 21 39
+G4WT0 > 22 10
+G4WT0 > 23 16
+G4WT0 > 24 41
+G4WT0 > 25 26
+G4WT0 > 26 22
+G4WT0 > 27 18
+G4WT0 > 28 12
+G4WT0 > 29 27
+G4WT0 > 30 9
+G4WT0 > 31 28
+G4WT0 > Sum 1350
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1350
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5335
+G4WT0 > 	Number of photons produced by cerenkov in this event : 1
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3986
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-29.0049,-41.0221,-50.2661)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 106
+G4WT1 > 1 60
+G4WT1 > 2 94
+G4WT1 > 3 30
+G4WT1 > 4 67
+G4WT1 > 5 51
+G4WT1 > 6 36
+G4WT1 > 7 86
+G4WT1 > 8 43
+G4WT1 > 9 54
+G4WT1 > 10 44
+G4WT1 > 11 45
+G4WT1 > 12 62
+G4WT1 > 13 24
+G4WT1 > 14 102
+G4WT1 > 15 58
+G4WT1 > 16 111
+G4WT1 > 17 35
+G4WT1 > 18 20
+G4WT1 > 19 22
+G4WT1 > 20 38
+G4WT1 > 21 32
+G4WT1 > 22 47
+G4WT1 > 23 36
+G4WT1 > 24 19
+G4WT1 > 25 34
+G4WT1 > 26 32
+G4WT1 > 27 38
+G4WT1 > 28 17
+G4WT1 > 29 13
+G4WT1 > 30 22
+G4WT1 > 31 18
+G4WT1 > Sum 1496
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1496
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5456
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 3960
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (0.0893949,-0.0298809,-106.457)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 37
+G4WT0 > 1 43
+G4WT0 > 2 81
+G4WT0 > 3 33
+G4WT0 > 4 47
+G4WT0 > 5 84
+G4WT0 > 6 36
+G4WT0 > 7 94
+G4WT0 > 8 87
+G4WT0 > 9 73
+G4WT0 > 10 69
+G4WT0 > 11 84
+G4WT0 > 12 24
+G4WT0 > 13 46
+G4WT0 > 14 18
+G4WT0 > 15 48
+G4WT0 > 16 46
+G4WT0 > 17 21
+G4WT0 > 18 15
+G4WT0 > 19 21
+G4WT0 > 20 42
+G4WT0 > 21 25
+G4WT0 > 22 44
+G4WT0 > 23 27
+G4WT0 > 24 23
+G4WT0 > 25 25
+G4WT0 > 26 10
+G4WT0 > 27 43
+G4WT0 > 28 14
+G4WT0 > 29 76
+G4WT0 > 30 17
+G4WT0 > 31 30
+G4WT0 > Sum 1383
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1383
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5581
+G4WT0 > 	Number of photons produced by cerenkov in this event : 3
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4201
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (0.273269,-0.0187879,-68.3837)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 72
+G4WT1 > 1 30
+G4WT1 > 2 44
+G4WT1 > 3 57
+G4WT1 > 4 28
+G4WT1 > 5 41
+G4WT1 > 6 51
+G4WT1 > 7 49
+G4WT1 > 8 50
+G4WT1 > 9 49
+G4WT1 > 10 23
+G4WT1 > 11 54
+G4WT1 > 12 21
+G4WT1 > 13 41
+G4WT1 > 14 92
+G4WT1 > 15 46
+G4WT1 > 16 69
+G4WT1 > 17 69
+G4WT1 > 18 66
+G4WT1 > 19 31
+G4WT1 > 20 32
+G4WT1 > 21 64
+G4WT1 > 22 47
+G4WT1 > 23 44
+G4WT1 > 24 54
+G4WT1 > 25 16
+G4WT1 > 26 28
+G4WT1 > 27 25
+G4WT1 > 28 23
+G4WT1 > 29 50
+G4WT1 > 30 59
+G4WT1 > 31 24
+G4WT1 > Sum 1449
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1449
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5358
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 3909
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (-29.33,37.0457,-55.0301)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 56
+G4WT0 > 1 106
+G4WT0 > 2 25
+G4WT0 > 3 24
+G4WT0 > 4 16
+G4WT0 > 5 60
+G4WT0 > 6 37
+G4WT0 > 7 118
+G4WT0 > 8 29
+G4WT0 > 9 44
+G4WT0 > 10 44
+G4WT0 > 11 48
+G4WT0 > 12 29
+G4WT0 > 13 25
+G4WT0 > 14 40
+G4WT0 > 15 40
+G4WT0 > 16 96
+G4WT0 > 17 48
+G4WT0 > 18 111
+G4WT0 > 19 33
+G4WT0 > 20 43
+G4WT0 > 21 79
+G4WT0 > 22 32
+G4WT0 > 23 18
+G4WT0 > 24 39
+G4WT0 > 25 37
+G4WT0 > 26 59
+G4WT0 > 27 28
+G4WT0 > 28 32
+G4WT0 > 29 45
+G4WT0 > 30 32
+G4WT0 > 31 18
+G4WT0 > Sum 1491
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1491
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5457
+G4WT0 > 	Number of photons produced by cerenkov in this event : 1
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3967
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-0.537923,-0.550378,-33.0915)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 43
+G4WT1 > 1 62
+G4WT1 > 2 32
+G4WT1 > 3 59
+G4WT1 > 4 27
+G4WT1 > 5 32
+G4WT1 > 6 52
+G4WT1 > 7 50
+G4WT1 > 8 43
+G4WT1 > 9 62
+G4WT1 > 10 46
+G4WT1 > 11 49
+G4WT1 > 12 54
+G4WT1 > 13 40
+G4WT1 > 14 48
+G4WT1 > 15 43
+G4WT1 > 16 32
+G4WT1 > 17 46
+G4WT1 > 18 56
+G4WT1 > 19 42
+G4WT1 > 20 45
+G4WT1 > 21 22
+G4WT1 > 22 61
+G4WT1 > 23 34
+G4WT1 > 24 40
+G4WT1 > 25 46
+G4WT1 > 26 33
+G4WT1 > 27 32
+G4WT1 > 28 55
+G4WT1 > 29 45
+G4WT1 > 30 47
+G4WT1 > 31 30
+G4WT1 > Sum 1408
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1408
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5491
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4083
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (0.213546,0.0549449,-97.2525)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 83
+G4WT0 > 1 63
+G4WT0 > 2 40
+G4WT0 > 3 90
+G4WT0 > 4 37
+G4WT0 > 5 46
+G4WT0 > 6 34
+G4WT0 > 7 44
+G4WT0 > 8 88
+G4WT0 > 9 33
+G4WT0 > 10 22
+G4WT0 > 11 93
+G4WT0 > 12 78
+G4WT0 > 13 37
+G4WT0 > 14 19
+G4WT0 > 15 26
+G4WT0 > 16 47
+G4WT0 > 17 80
+G4WT0 > 18 81
+G4WT0 > 19 42
+G4WT0 > 20 38
+G4WT0 > 21 22
+G4WT0 > 22 25
+G4WT0 > 23 39
+G4WT0 > 24 18
+G4WT0 > 25 34
+G4WT0 > 26 10
+G4WT0 > 27 26
+G4WT0 > 28 12
+G4WT0 > 29 13
+G4WT0 > 30 30
+G4WT0 > 31 26
+G4WT0 > Sum 1376
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1376
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5624
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4248
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (0.0184278,-0.0174346,-6.3466)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 51
+G4WT1 > 1 36
+G4WT1 > 2 49
+G4WT1 > 3 42
+G4WT1 > 4 53
+G4WT1 > 5 43
+G4WT1 > 6 48
+G4WT1 > 7 46
+G4WT1 > 8 40
+G4WT1 > 9 49
+G4WT1 > 10 53
+G4WT1 > 11 52
+G4WT1 > 12 36
+G4WT1 > 13 47
+G4WT1 > 14 40
+G4WT1 > 15 32
+G4WT1 > 16 41
+G4WT1 > 17 39
+G4WT1 > 18 45
+G4WT1 > 19 33
+G4WT1 > 20 56
+G4WT1 > 21 53
+G4WT1 > 22 54
+G4WT1 > 23 35
+G4WT1 > 24 42
+G4WT1 > 25 43
+G4WT1 > 26 41
+G4WT1 > 27 49
+G4WT1 > 28 57
+G4WT1 > 29 62
+G4WT1 > 30 46
+G4WT1 > 31 43
+G4WT1 > Sum 1456
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1456
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5580
+G4WT1 > 	Number of photons produced by cerenkov in this event : 2
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4126
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-4.17274,-1.39417,-93.6053)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 82
+G4WT1 > 1 30
+G4WT1 > 2 70
+G4WT1 > 3 43
+G4WT1 > 4 71
+G4WT1 > 5 22
+G4WT1 > 6 27
+G4WT1 > 7 70
+G4WT1 > 8 35
+G4WT1 > 9 49
+G4WT1 > 10 99
+G4WT1 > 11 23
+G4WT1 > 12 37
+G4WT1 > 13 71
+G4WT1 > 14 39
+G4WT1 > 15 45
+G4WT1 > 16 42
+G4WT1 > 17 92
+G4WT1 > 18 37
+G4WT1 > 19 76
+G4WT1 > 20 32
+G4WT1 > 21 32
+G4WT1 > 22 22
+G4WT1 > 23 22
+G4WT1 > 24 46
+G4WT1 > 25 43
+G4WT1 > 26 45
+G4WT1 > 27 14
+G4WT1 > 28 23
+G4WT1 > 29 13
+G4WT1 > 30 23
+G4WT1 > 31 27
+G4WT1 > Sum 1402
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1402
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5535
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4133
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (13.6904,-21.3037,84.081)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 30
+G4WT0 > 1 84
+G4WT0 > 2 89
+G4WT0 > 3 70
+G4WT0 > 4 91
+G4WT0 > 5 43
+G4WT0 > 6 154
+G4WT0 > 7 31
+G4WT0 > 8 59
+G4WT0 > 9 41
+G4WT0 > 10 15
+G4WT0 > 11 74
+G4WT0 > 12 24
+G4WT0 > 13 24
+G4WT0 > 14 40
+G4WT0 > 15 69
+G4WT0 > 16 42
+G4WT0 > 17 27
+G4WT0 > 18 66
+G4WT0 > 19 13
+G4WT0 > 20 33
+G4WT0 > 21 38
+G4WT0 > 22 45
+G4WT0 > 23 28
+G4WT0 > 24 24
+G4WT0 > 25 41
+G4WT0 > 26 42
+G4WT0 > 27 21
+G4WT0 > 28 23
+G4WT0 > 29 47
+G4WT0 > 30 22
+G4WT0 > 31 13
+G4WT0 > Sum 1463
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1463
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5562
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4099
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-0.482424,0.543408,-106.468)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 100
+G4WT1 > 1 41
+G4WT1 > 2 21
+G4WT1 > 3 50
+G4WT1 > 4 84
+G4WT1 > 5 79
+G4WT1 > 6 15
+G4WT1 > 7 97
+G4WT1 > 8 16
+G4WT1 > 9 48
+G4WT1 > 10 41
+G4WT1 > 11 21
+G4WT1 > 12 84
+G4WT1 > 13 24
+G4WT1 > 14 46
+G4WT1 > 15 46
+G4WT1 > 16 66
+G4WT1 > 17 72
+G4WT1 > 18 41
+G4WT1 > 19 91
+G4WT1 > 20 16
+G4WT1 > 21 9
+G4WT1 > 22 43
+G4WT1 > 23 18
+G4WT1 > 24 22
+G4WT1 > 25 34
+G4WT1 > 26 38
+G4WT1 > 27 15
+G4WT1 > 28 28
+G4WT1 > 29 42
+G4WT1 > 30 43
+G4WT1 > 31 18
+G4WT1 > Sum 1409
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1409
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5649
+G4WT1 > 	Number of photons produced by cerenkov in this event : 1
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4241
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (-5.89016,2.77428,-79.8943)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 27
+G4WT0 > 1 33
+G4WT0 > 2 60
+G4WT0 > 3 38
+G4WT0 > 4 90
+G4WT0 > 5 77
+G4WT0 > 6 52
+G4WT0 > 7 34
+G4WT0 > 8 37
+G4WT0 > 9 39
+G4WT0 > 10 44
+G4WT0 > 11 84
+G4WT0 > 12 29
+G4WT0 > 13 29
+G4WT0 > 14 26
+G4WT0 > 15 72
+G4WT0 > 16 54
+G4WT0 > 17 67
+G4WT0 > 18 23
+G4WT0 > 19 15
+G4WT0 > 20 43
+G4WT0 > 21 20
+G4WT0 > 22 42
+G4WT0 > 23 36
+G4WT0 > 24 74
+G4WT0 > 25 29
+G4WT0 > 26 51
+G4WT0 > 27 62
+G4WT0 > 28 31
+G4WT0 > 29 40
+G4WT0 > 30 44
+G4WT0 > 31 21
+G4WT0 > Sum 1423
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1423
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5487
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4064
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-8.76545,-2.61976,-92.2495)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 40
+G4WT1 > 1 82
+G4WT1 > 2 75
+G4WT1 > 3 35
+G4WT1 > 4 46
+G4WT1 > 5 25
+G4WT1 > 6 57
+G4WT1 > 7 91
+G4WT1 > 8 69
+G4WT1 > 9 39
+G4WT1 > 10 88
+G4WT1 > 11 33
+G4WT1 > 12 88
+G4WT1 > 13 46
+G4WT1 > 14 30
+G4WT1 > 15 30
+G4WT1 > 16 40
+G4WT1 > 17 33
+G4WT1 > 18 21
+G4WT1 > 19 19
+G4WT1 > 20 81
+G4WT1 > 21 21
+G4WT1 > 22 32
+G4WT1 > 23 71
+G4WT1 > 24 20
+G4WT1 > 25 45
+G4WT1 > 26 30
+G4WT1 > 27 50
+G4WT1 > 28 21
+G4WT1 > 29 20
+G4WT1 > 30 23
+G4WT1 > 31 14
+G4WT1 > Sum 1415
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1415
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5440
+G4WT1 > 	Number of photons produced by cerenkov in this event : 1
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4026
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (0.0295511,-0.00896837,-75.0676)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 58
+G4WT0 > 1 47
+G4WT0 > 2 71
+G4WT0 > 3 65
+G4WT0 > 4 53
+G4WT0 > 5 59
+G4WT0 > 6 28
+G4WT0 > 7 28
+G4WT0 > 8 44
+G4WT0 > 9 68
+G4WT0 > 10 50
+G4WT0 > 11 44
+G4WT0 > 12 65
+G4WT0 > 13 65
+G4WT0 > 14 63
+G4WT0 > 15 43
+G4WT0 > 16 68
+G4WT0 > 17 73
+G4WT0 > 18 57
+G4WT0 > 19 25
+G4WT0 > 20 58
+G4WT0 > 21 20
+G4WT0 > 22 23
+G4WT0 > 23 53
+G4WT0 > 24 23
+G4WT0 > 25 48
+G4WT0 > 26 55
+G4WT0 > 27 54
+G4WT0 > 28 33
+G4WT0 > 29 46
+G4WT0 > 30 26
+G4WT0 > 31 15
+G4WT0 > Sum 1528
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1528
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5705
+G4WT0 > 	Number of photons produced by cerenkov in this event : 1
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4178
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-1.86707,-5.01462,-33.3377)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 46
+G4WT1 > 1 48
+G4WT1 > 2 41
+G4WT1 > 3 48
+G4WT1 > 4 68
+G4WT1 > 5 54
+G4WT1 > 6 41
+G4WT1 > 7 68
+G4WT1 > 8 41
+G4WT1 > 9 42
+G4WT1 > 10 57
+G4WT1 > 11 56
+G4WT1 > 12 46
+G4WT1 > 13 47
+G4WT1 > 14 66
+G4WT1 > 15 63
+G4WT1 > 16 47
+G4WT1 > 17 22
+G4WT1 > 18 59
+G4WT1 > 19 45
+G4WT1 > 20 64
+G4WT1 > 21 62
+G4WT1 > 22 27
+G4WT1 > 23 43
+G4WT1 > 24 31
+G4WT1 > 25 53
+G4WT1 > 26 44
+G4WT1 > 27 28
+G4WT1 > 28 53
+G4WT1 > 29 27
+G4WT1 > 30 69
+G4WT1 > 31 28
+G4WT1 > Sum 1534
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1534
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5624
+G4WT1 > 	Number of photons produced by cerenkov in this event : 2
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4092
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (0.0222563,0.021553,-89.9434)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 89
+G4WT0 > 1 36
+G4WT0 > 2 81
+G4WT0 > 3 27
+G4WT0 > 4 21
+G4WT0 > 5 32
+G4WT0 > 6 81
+G4WT0 > 7 43
+G4WT0 > 8 46
+G4WT0 > 9 60
+G4WT0 > 10 40
+G4WT0 > 11 35
+G4WT0 > 12 23
+G4WT0 > 13 40
+G4WT0 > 14 35
+G4WT0 > 15 43
+G4WT0 > 16 82
+G4WT0 > 17 76
+G4WT0 > 18 24
+G4WT0 > 19 44
+G4WT0 > 20 44
+G4WT0 > 21 20
+G4WT0 > 22 36
+G4WT0 > 23 59
+G4WT0 > 24 75
+G4WT0 > 25 23
+G4WT0 > 26 89
+G4WT0 > 27 24
+G4WT0 > 28 47
+G4WT0 > 29 55
+G4WT0 > 30 67
+G4WT0 > 31 32
+G4WT0 > Sum 1529
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1529
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5496
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3967
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (-0.0421499,-0.144393,-101.999)
+G4WT0 > 	Total energy deposition in scintillator : 312.83 (keV)
+G4WT0 > 0 9
+G4WT0 > 1 49
+G4WT0 > 2 25
+G4WT0 > 3 18
+G4WT0 > 4 53
+G4WT0 > 5 51
+G4WT0 > 6 55
+G4WT0 > 7 59
+G4WT0 > 8 38
+G4WT0 > 9 9
+G4WT0 > 10 9
+G4WT0 > 11 18
+G4WT0 > 12 17
+G4WT0 > 13 29
+G4WT0 > 14 20
+G4WT0 > 15 5
+G4WT0 > 16 51
+G4WT0 > 17 17
+G4WT0 > 18 20
+G4WT0 > 19 10
+G4WT0 > 20 57
+G4WT0 > 21 21
+G4WT0 > 22 31
+G4WT0 > 23 31
+G4WT0 > 24 23
+G4WT0 > 25 20
+G4WT0 > 26 12
+G4WT0 > 27 23
+G4WT0 > 28 6
+G4WT0 > 29 13
+G4WT0 > 30 8
+G4WT0 > 31 10
+G4WT0 > Sum 817
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 817
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 3388
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 2571
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (14.8956,15.8466,-88.0117)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 101
+G4WT1 > 1 124
+G4WT1 > 2 62
+G4WT1 > 3 54
+G4WT1 > 4 49
+G4WT1 > 5 15
+G4WT1 > 6 24
+G4WT1 > 7 62
+G4WT1 > 8 101
+G4WT1 > 9 52
+G4WT1 > 10 53
+G4WT1 > 11 28
+G4WT1 > 12 31
+G4WT1 > 13 18
+G4WT1 > 14 48
+G4WT1 > 15 13
+G4WT1 > 16 56
+G4WT1 > 17 30
+G4WT1 > 18 39
+G4WT1 > 19 42
+G4WT1 > 20 32
+G4WT1 > 21 67
+G4WT1 > 22 23
+G4WT1 > 23 78
+G4WT1 > 24 19
+G4WT1 > 25 33
+G4WT1 > 26 48
+G4WT1 > 27 14
+G4WT1 > 28 28
+G4WT1 > 29 20
+G4WT1 > 30 30
+G4WT1 > 31 29
+G4WT1 > Sum 1423
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1423
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5448
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4025
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (13.6468,23.7767,-77.6044)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 30
+G4WT0 > 1 29
+G4WT0 > 2 74
+G4WT0 > 3 128
+G4WT0 > 4 53
+G4WT0 > 5 24
+G4WT0 > 6 32
+G4WT0 > 7 60
+G4WT0 > 8 39
+G4WT0 > 9 30
+G4WT0 > 10 47
+G4WT0 > 11 60
+G4WT0 > 12 51
+G4WT0 > 13 37
+G4WT0 > 14 53
+G4WT0 > 15 22
+G4WT0 > 16 66
+G4WT0 > 17 51
+G4WT0 > 18 105
+G4WT0 > 19 98
+G4WT0 > 20 22
+G4WT0 > 21 31
+G4WT0 > 22 20
+G4WT0 > 23 19
+G4WT0 > 24 45
+G4WT0 > 25 28
+G4WT0 > 26 52
+G4WT0 > 27 45
+G4WT0 > 28 67
+G4WT0 > 29 23
+G4WT0 > 30 28
+G4WT0 > 31 24
+G4WT0 > Sum 1493
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1493
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5538
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4045
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-0.616617,-0.120209,-77.4992)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 36
+G4WT1 > 1 75
+G4WT1 > 2 71
+G4WT1 > 3 72
+G4WT1 > 4 82
+G4WT1 > 5 43
+G4WT1 > 6 79
+G4WT1 > 7 38
+G4WT1 > 8 52
+G4WT1 > 9 43
+G4WT1 > 10 59
+G4WT1 > 11 39
+G4WT1 > 12 21
+G4WT1 > 13 62
+G4WT1 > 14 54
+G4WT1 > 15 72
+G4WT1 > 16 43
+G4WT1 > 17 51
+G4WT1 > 18 63
+G4WT1 > 19 47
+G4WT1 > 20 20
+G4WT1 > 21 26
+G4WT1 > 22 48
+G4WT1 > 23 27
+G4WT1 > 24 43
+G4WT1 > 25 25
+G4WT1 > 26 48
+G4WT1 > 27 22
+G4WT1 > 28 29
+G4WT1 > 29 47
+G4WT1 > 30 28
+G4WT1 > 31 25
+G4WT1 > Sum 1490
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1490
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5489
+G4WT1 > 	Number of photons produced by cerenkov in this event : 1
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4000
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (-3.82112,15.4251,-42.5819)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 74
+G4WT0 > 1 50
+G4WT0 > 2 65
+G4WT0 > 3 62
+G4WT0 > 4 67
+G4WT0 > 5 49
+G4WT0 > 6 37
+G4WT0 > 7 55
+G4WT0 > 8 87
+G4WT0 > 9 44
+G4WT0 > 10 54
+G4WT0 > 11 48
+G4WT0 > 12 51
+G4WT0 > 13 70
+G4WT0 > 14 62
+G4WT0 > 15 46
+G4WT0 > 16 27
+G4WT0 > 17 39
+G4WT0 > 18 47
+G4WT0 > 19 23
+G4WT0 > 20 24
+G4WT0 > 21 52
+G4WT0 > 22 50
+G4WT0 > 23 22
+G4WT0 > 24 66
+G4WT0 > 25 38
+G4WT0 > 26 25
+G4WT0 > 27 29
+G4WT0 > 28 39
+G4WT0 > 29 35
+G4WT0 > 30 46
+G4WT0 > 31 23
+G4WT0 > Sum 1506
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1506
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5477
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3971
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (12.0145,1.07297,-80.4449)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 22
+G4WT1 > 1 44
+G4WT1 > 2 85
+G4WT1 > 3 80
+G4WT1 > 4 43
+G4WT1 > 5 45
+G4WT1 > 6 45
+G4WT1 > 7 40
+G4WT1 > 8 41
+G4WT1 > 9 75
+G4WT1 > 10 68
+G4WT1 > 11 19
+G4WT1 > 12 50
+G4WT1 > 13 41
+G4WT1 > 14 31
+G4WT1 > 15 51
+G4WT1 > 16 58
+G4WT1 > 17 46
+G4WT1 > 18 31
+G4WT1 > 19 28
+G4WT1 > 20 31
+G4WT1 > 21 25
+G4WT1 > 22 44
+G4WT1 > 23 40
+G4WT1 > 24 45
+G4WT1 > 25 27
+G4WT1 > 26 75
+G4WT1 > 27 28
+G4WT1 > 28 62
+G4WT1 > 29 72
+G4WT1 > 30 18
+G4WT1 > 31 23
+G4WT1 > Sum 1433
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1433
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5403
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 3970
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (12.5627,-14.6189,41.6068)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 34
+G4WT0 > 1 43
+G4WT0 > 2 45
+G4WT0 > 3 54
+G4WT0 > 4 70
+G4WT0 > 5 43
+G4WT0 > 6 42
+G4WT0 > 7 69
+G4WT0 > 8 43
+G4WT0 > 9 45
+G4WT0 > 10 44
+G4WT0 > 11 66
+G4WT0 > 12 40
+G4WT0 > 13 35
+G4WT0 > 14 46
+G4WT0 > 15 82
+G4WT0 > 16 44
+G4WT0 > 17 59
+G4WT0 > 18 56
+G4WT0 > 19 47
+G4WT0 > 20 58
+G4WT0 > 21 43
+G4WT0 > 22 49
+G4WT0 > 23 69
+G4WT0 > 24 61
+G4WT0 > 25 25
+G4WT0 > 26 34
+G4WT0 > 27 30
+G4WT0 > 28 29
+G4WT0 > 29 32
+G4WT0 > 30 40
+G4WT0 > 31 32
+G4WT0 > Sum 1509
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1509
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5548
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4039
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-0.549627,2.26568,-68.1388)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 50
+G4WT1 > 1 22
+G4WT1 > 2 49
+G4WT1 > 3 60
+G4WT1 > 4 57
+G4WT1 > 5 40
+G4WT1 > 6 27
+G4WT1 > 7 42
+G4WT1 > 8 51
+G4WT1 > 9 60
+G4WT1 > 10 66
+G4WT1 > 11 56
+G4WT1 > 12 64
+G4WT1 > 13 57
+G4WT1 > 14 43
+G4WT1 > 15 19
+G4WT1 > 16 67
+G4WT1 > 17 38
+G4WT1 > 18 58
+G4WT1 > 19 52
+G4WT1 > 20 54
+G4WT1 > 21 50
+G4WT1 > 22 72
+G4WT1 > 23 29
+G4WT1 > 24 60
+G4WT1 > 25 24
+G4WT1 > 26 50
+G4WT1 > 27 18
+G4WT1 > 28 44
+G4WT1 > 29 27
+G4WT1 > 30 23
+G4WT1 > 31 23
+G4WT1 > Sum 1452
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1452
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5600
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4148
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (6.23044,1.07427,-89.8407)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 34
+G4WT0 > 1 81
+G4WT0 > 2 55
+G4WT0 > 3 43
+G4WT0 > 4 94
+G4WT0 > 5 93
+G4WT0 > 6 50
+G4WT0 > 7 72
+G4WT0 > 8 49
+G4WT0 > 9 49
+G4WT0 > 10 30
+G4WT0 > 11 45
+G4WT0 > 12 74
+G4WT0 > 13 57
+G4WT0 > 14 71
+G4WT0 > 15 30
+G4WT0 > 16 71
+G4WT0 > 17 22
+G4WT0 > 18 22
+G4WT0 > 19 52
+G4WT0 > 20 36
+G4WT0 > 21 22
+G4WT0 > 22 57
+G4WT0 > 23 41
+G4WT0 > 24 36
+G4WT0 > 25 36
+G4WT0 > 26 17
+G4WT0 > 27 24
+G4WT0 > 28 23
+G4WT0 > 29 34
+G4WT0 > 30 32
+G4WT0 > 31 18
+G4WT0 > Sum 1470
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1470
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5590
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4120
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (4.49473,7.1484,-90.401)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 87
+G4WT1 > 1 65
+G4WT1 > 2 79
+G4WT1 > 3 44
+G4WT1 > 4 23
+G4WT1 > 5 25
+G4WT1 > 6 75
+G4WT1 > 7 73
+G4WT1 > 8 35
+G4WT1 > 9 28
+G4WT1 > 10 47
+G4WT1 > 11 19
+G4WT1 > 12 66
+G4WT1 > 13 84
+G4WT1 > 14 60
+G4WT1 > 15 49
+G4WT1 > 16 22
+G4WT1 > 17 42
+G4WT1 > 18 24
+G4WT1 > 19 33
+G4WT1 > 20 50
+G4WT1 > 21 40
+G4WT1 > 22 31
+G4WT1 > 23 45
+G4WT1 > 24 26
+G4WT1 > 25 46
+G4WT1 > 26 66
+G4WT1 > 27 54
+G4WT1 > 28 24
+G4WT1 > 29 41
+G4WT1 > 30 17
+G4WT1 > 31 23
+G4WT1 > Sum 1443
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1443
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5575
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4132
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (37.7669,-72.1484,37.573)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 963
+G4WT0 > 1 34
+G4WT0 > 2 19
+G4WT0 > 3 117
+G4WT0 > 4 39
+G4WT0 > 5 44
+G4WT0 > 6 23
+G4WT0 > 7 23
+G4WT0 > 8 50
+G4WT0 > 9 32
+G4WT0 > 10 18
+G4WT0 > 11 39
+G4WT0 > 12 58
+G4WT0 > 13 111
+G4WT0 > 14 48
+G4WT0 > 15 46
+G4WT0 > 16 19
+G4WT0 > 17 30
+G4WT0 > 18 23
+G4WT0 > 19 35
+G4WT0 > 20 17
+G4WT0 > 21 28
+G4WT0 > 22 40
+G4WT0 > 23 18
+G4WT0 > 24 38
+G4WT0 > 25 9
+G4WT0 > 26 18
+G4WT0 > 27 20
+G4WT0 > 28 14
+G4WT0 > 29 25
+G4WT0 > 30 14
+G4WT0 > 31 12
+G4WT0 > Sum 2024
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 2024
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5443
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3419
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (0.355164,5.67745,-101.809)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 79
+G4WT1 > 1 80
+G4WT1 > 2 89
+G4WT1 > 3 49
+G4WT1 > 4 8
+G4WT1 > 5 46
+G4WT1 > 6 79
+G4WT1 > 7 84
+G4WT1 > 8 87
+G4WT1 > 9 43
+G4WT1 > 10 78
+G4WT1 > 11 45
+G4WT1 > 12 23
+G4WT1 > 13 86
+G4WT1 > 14 26
+G4WT1 > 15 35
+G4WT1 > 16 46
+G4WT1 > 17 35
+G4WT1 > 18 15
+G4WT1 > 19 45
+G4WT1 > 20 39
+G4WT1 > 21 45
+G4WT1 > 22 21
+G4WT1 > 23 18
+G4WT1 > 24 19
+G4WT1 > 25 41
+G4WT1 > 26 25
+G4WT1 > 27 26
+G4WT1 > 28 22
+G4WT1 > 29 12
+G4WT1 > 30 38
+G4WT1 > 31 39
+G4WT1 > Sum 1423
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1423
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5638
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4215
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (14.4605,24.3965,-16.0537)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 56
+G4WT0 > 1 27
+G4WT0 > 2 43
+G4WT0 > 3 33
+G4WT0 > 4 34
+G4WT0 > 5 39
+G4WT0 > 6 47
+G4WT0 > 7 46
+G4WT0 > 8 41
+G4WT0 > 9 94
+G4WT0 > 10 81
+G4WT0 > 11 43
+G4WT0 > 12 33
+G4WT0 > 13 52
+G4WT0 > 14 60
+G4WT0 > 15 43
+G4WT0 > 16 56
+G4WT0 > 17 54
+G4WT0 > 18 37
+G4WT0 > 19 33
+G4WT0 > 20 34
+G4WT0 > 21 60
+G4WT0 > 22 26
+G4WT0 > 23 38
+G4WT0 > 24 37
+G4WT0 > 25 50
+G4WT0 > 26 42
+G4WT0 > 27 25
+G4WT0 > 28 34
+G4WT0 > 29 48
+G4WT0 > 30 36
+G4WT0 > 31 15
+G4WT0 > Sum 1397
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1397
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5379
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3982
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-1.80398,1.3594,-70.7982)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 26
+G4WT1 > 1 62
+G4WT1 > 2 38
+G4WT1 > 3 50
+G4WT1 > 4 53
+G4WT1 > 5 40
+G4WT1 > 6 36
+G4WT1 > 7 21
+G4WT1 > 8 69
+G4WT1 > 9 38
+G4WT1 > 10 33
+G4WT1 > 11 29
+G4WT1 > 12 62
+G4WT1 > 13 58
+G4WT1 > 14 79
+G4WT1 > 15 37
+G4WT1 > 16 42
+G4WT1 > 17 80
+G4WT1 > 18 38
+G4WT1 > 19 49
+G4WT1 > 20 80
+G4WT1 > 21 24
+G4WT1 > 22 41
+G4WT1 > 23 55
+G4WT1 > 24 70
+G4WT1 > 25 54
+G4WT1 > 26 24
+G4WT1 > 27 35
+G4WT1 > 28 21
+G4WT1 > 29 61
+G4WT1 > 30 34
+G4WT1 > 31 20
+G4WT1 > Sum 1459
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1459
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5611
+G4WT1 > 	Number of photons produced by cerenkov in this event : 1
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4153
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (-15.4942,-16.116,4.35748)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 45
+G4WT0 > 1 52
+G4WT0 > 2 44
+G4WT0 > 3 41
+G4WT0 > 4 43
+G4WT0 > 5 46
+G4WT0 > 6 85
+G4WT0 > 7 58
+G4WT0 > 8 66
+G4WT0 > 9 36
+G4WT0 > 10 36
+G4WT0 > 11 51
+G4WT0 > 12 48
+G4WT0 > 13 74
+G4WT0 > 14 59
+G4WT0 > 15 40
+G4WT0 > 16 48
+G4WT0 > 17 38
+G4WT0 > 18 48
+G4WT0 > 19 47
+G4WT0 > 20 36
+G4WT0 > 21 42
+G4WT0 > 22 36
+G4WT0 > 23 45
+G4WT0 > 24 50
+G4WT0 > 25 48
+G4WT0 > 26 33
+G4WT0 > 27 52
+G4WT0 > 28 38
+G4WT0 > 29 36
+G4WT0 > 30 44
+G4WT0 > 31 30
+G4WT0 > Sum 1495
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1495
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5587
+G4WT0 > 	Number of photons produced by cerenkov in this event : 1
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4093
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (9.29951,2.33444,-51.6713)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 61
+G4WT1 > 1 46
+G4WT1 > 2 80
+G4WT1 > 3 51
+G4WT1 > 4 53
+G4WT1 > 5 41
+G4WT1 > 6 51
+G4WT1 > 7 31
+G4WT1 > 8 61
+G4WT1 > 9 70
+G4WT1 > 10 67
+G4WT1 > 11 43
+G4WT1 > 12 35
+G4WT1 > 13 51
+G4WT1 > 14 50
+G4WT1 > 15 60
+G4WT1 > 16 50
+G4WT1 > 17 58
+G4WT1 > 18 40
+G4WT1 > 19 63
+G4WT1 > 20 32
+G4WT1 > 21 61
+G4WT1 > 22 60
+G4WT1 > 23 23
+G4WT1 > 24 36
+G4WT1 > 25 32
+G4WT1 > 26 27
+G4WT1 > 27 52
+G4WT1 > 28 14
+G4WT1 > 29 54
+G4WT1 > 30 26
+G4WT1 > 31 43
+G4WT1 > Sum 1522
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1522
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5689
+G4WT1 > 	Number of photons produced by cerenkov in this event : 1
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4168
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (11.7056,-0.25218,-28.6514)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 64
+G4WT0 > 1 62
+G4WT0 > 2 68
+G4WT0 > 3 40
+G4WT0 > 4 53
+G4WT0 > 5 44
+G4WT0 > 6 38
+G4WT0 > 7 57
+G4WT0 > 8 45
+G4WT0 > 9 40
+G4WT0 > 10 25
+G4WT0 > 11 36
+G4WT0 > 12 55
+G4WT0 > 13 50
+G4WT0 > 14 23
+G4WT0 > 15 30
+G4WT0 > 16 27
+G4WT0 > 17 56
+G4WT0 > 18 41
+G4WT0 > 19 51
+G4WT0 > 20 50
+G4WT0 > 21 49
+G4WT0 > 22 62
+G4WT0 > 23 54
+G4WT0 > 24 28
+G4WT0 > 25 62
+G4WT0 > 26 46
+G4WT0 > 27 45
+G4WT0 > 28 50
+G4WT0 > 29 29
+G4WT0 > 30 30
+G4WT0 > 31 30
+G4WT0 > Sum 1440
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1440
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5319
+G4WT0 > 	Number of photons produced by cerenkov in this event : 1
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3880
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-4.92256,17.9095,-52.4921)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 23
+G4WT1 > 1 57
+G4WT1 > 2 43
+G4WT1 > 3 31
+G4WT1 > 4 41
+G4WT1 > 5 40
+G4WT1 > 6 57
+G4WT1 > 7 21
+G4WT1 > 8 43
+G4WT1 > 9 45
+G4WT1 > 10 47
+G4WT1 > 11 42
+G4WT1 > 12 47
+G4WT1 > 13 73
+G4WT1 > 14 55
+G4WT1 > 15 73
+G4WT1 > 16 37
+G4WT1 > 17 59
+G4WT1 > 18 23
+G4WT1 > 19 65
+G4WT1 > 20 32
+G4WT1 > 21 43
+G4WT1 > 22 62
+G4WT1 > 23 31
+G4WT1 > 24 51
+G4WT1 > 25 52
+G4WT1 > 26 49
+G4WT1 > 27 68
+G4WT1 > 28 12
+G4WT1 > 29 54
+G4WT1 > 30 44
+G4WT1 > 31 16
+G4WT1 > Sum 1436
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1436
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5434
+G4WT1 > 	Number of photons produced by cerenkov in this event : 1
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 3999
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (0.424517,4.37177,-86.18)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 48
+G4WT0 > 1 52
+G4WT0 > 2 33
+G4WT0 > 3 48
+G4WT0 > 4 34
+G4WT0 > 5 60
+G4WT0 > 6 35
+G4WT0 > 7 63
+G4WT0 > 8 33
+G4WT0 > 9 49
+G4WT0 > 10 58
+G4WT0 > 11 60
+G4WT0 > 12 21
+G4WT0 > 13 33
+G4WT0 > 14 76
+G4WT0 > 15 38
+G4WT0 > 16 49
+G4WT0 > 17 43
+G4WT0 > 18 18
+G4WT0 > 19 84
+G4WT0 > 20 74
+G4WT0 > 21 28
+G4WT0 > 22 30
+G4WT0 > 23 17
+G4WT0 > 24 40
+G4WT0 > 25 16
+G4WT0 > 26 41
+G4WT0 > 27 29
+G4WT0 > 28 51
+G4WT0 > 29 69
+G4WT0 > 30 21
+G4WT0 > 31 18
+G4WT0 > Sum 1369
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1369
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5466
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4097
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (0.163535,-0.484312,-86.5525)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 22
+G4WT1 > 1 47
+G4WT1 > 2 78
+G4WT1 > 3 84
+G4WT1 > 4 85
+G4WT1 > 5 52
+G4WT1 > 6 41
+G4WT1 > 7 35
+G4WT1 > 8 41
+G4WT1 > 9 38
+G4WT1 > 10 63
+G4WT1 > 11 74
+G4WT1 > 12 40
+G4WT1 > 13 18
+G4WT1 > 14 16
+G4WT1 > 15 34
+G4WT1 > 16 45
+G4WT1 > 17 91
+G4WT1 > 18 50
+G4WT1 > 19 29
+G4WT1 > 20 44
+G4WT1 > 21 42
+G4WT1 > 22 41
+G4WT1 > 23 39
+G4WT1 > 24 58
+G4WT1 > 25 31
+G4WT1 > 26 32
+G4WT1 > 27 38
+G4WT1 > 28 21
+G4WT1 > 29 76
+G4WT1 > 30 41
+G4WT1 > 31 14
+G4WT1 > Sum 1460
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1460
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5521
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4061
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (13.3995,-3.43383,-95.8032)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 90
+G4WT1 > 1 22
+G4WT1 > 2 36
+G4WT1 > 3 69
+G4WT1 > 4 38
+G4WT1 > 5 70
+G4WT1 > 6 33
+G4WT1 > 7 98
+G4WT1 > 8 89
+G4WT1 > 9 91
+G4WT1 > 10 65
+G4WT1 > 11 79
+G4WT1 > 12 20
+G4WT1 > 13 36
+G4WT1 > 14 40
+G4WT1 > 15 69
+G4WT1 > 16 22
+G4WT1 > 17 38
+G4WT1 > 18 25
+G4WT1 > 19 12
+G4WT1 > 20 40
+G4WT1 > 21 19
+G4WT1 > 22 30
+G4WT1 > 23 34
+G4WT1 > 24 35
+G4WT1 > 25 51
+G4WT1 > 26 14
+G4WT1 > 27 34
+G4WT1 > 28 16
+G4WT1 > 29 25
+G4WT1 > 30 43
+G4WT1 > 31 15
+G4WT1 > Sum 1398
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1398
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5339
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 3941
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (0.0520436,0.93155,-84.3071)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 85
+G4WT0 > 1 53
+G4WT0 > 2 77
+G4WT0 > 3 79
+G4WT0 > 4 32
+G4WT0 > 5 46
+G4WT0 > 6 38
+G4WT0 > 7 45
+G4WT0 > 8 79
+G4WT0 > 9 44
+G4WT0 > 10 68
+G4WT0 > 11 68
+G4WT0 > 12 77
+G4WT0 > 13 45
+G4WT0 > 14 44
+G4WT0 > 15 22
+G4WT0 > 16 47
+G4WT0 > 17 75
+G4WT0 > 18 51
+G4WT0 > 19 43
+G4WT0 > 20 26
+G4WT0 > 21 38
+G4WT0 > 22 48
+G4WT0 > 23 40
+G4WT0 > 24 40
+G4WT0 > 25 41
+G4WT0 > 26 18
+G4WT0 > 27 27
+G4WT0 > 28 37
+G4WT0 > 29 28
+G4WT0 > 30 21
+G4WT0 > 31 23
+G4WT0 > Sum 1505
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1505
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5611
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4106
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (2.04769,0.202749,-102.831)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 103
+G4WT1 > 1 94
+G4WT1 > 2 76
+G4WT1 > 3 37
+G4WT1 > 4 20
+G4WT1 > 5 91
+G4WT1 > 6 19
+G4WT1 > 7 48
+G4WT1 > 8 44
+G4WT1 > 9 37
+G4WT1 > 10 15
+G4WT1 > 11 24
+G4WT1 > 12 21
+G4WT1 > 13 87
+G4WT1 > 14 9
+G4WT1 > 15 46
+G4WT1 > 16 30
+G4WT1 > 17 37
+G4WT1 > 18 48
+G4WT1 > 19 79
+G4WT1 > 20 27
+G4WT1 > 21 38
+G4WT1 > 22 23
+G4WT1 > 23 42
+G4WT1 > 24 72
+G4WT1 > 25 92
+G4WT1 > 26 17
+G4WT1 > 27 18
+G4WT1 > 28 35
+G4WT1 > 29 37
+G4WT1 > 30 9
+G4WT1 > 31 8
+G4WT1 > Sum 1383
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1383
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5655
+G4WT1 > 	Number of photons produced by cerenkov in this event : 4
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4276
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (0.0245906,-0.035299,-76.8112)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 82
+G4WT1 > 1 53
+G4WT1 > 2 44
+G4WT1 > 3 78
+G4WT1 > 4 74
+G4WT1 > 5 41
+G4WT1 > 6 47
+G4WT1 > 7 55
+G4WT1 > 8 48
+G4WT1 > 9 41
+G4WT1 > 10 32
+G4WT1 > 11 53
+G4WT1 > 12 47
+G4WT1 > 13 17
+G4WT1 > 14 28
+G4WT1 > 15 31
+G4WT1 > 16 25
+G4WT1 > 17 59
+G4WT1 > 18 66
+G4WT1 > 19 47
+G4WT1 > 20 28
+G4WT1 > 21 18
+G4WT1 > 22 22
+G4WT1 > 23 69
+G4WT1 > 24 45
+G4WT1 > 25 61
+G4WT1 > 26 73
+G4WT1 > 27 34
+G4WT1 > 28 25
+G4WT1 > 29 31
+G4WT1 > 30 73
+G4WT1 > 31 52
+G4WT1 > Sum 1499
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1499
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5714
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4215
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (-11.2149,-7.47133,-40.6479)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 39
+G4WT0 > 1 54
+G4WT0 > 2 56
+G4WT0 > 3 55
+G4WT0 > 4 35
+G4WT0 > 5 53
+G4WT0 > 6 57
+G4WT0 > 7 44
+G4WT0 > 8 56
+G4WT0 > 9 25
+G4WT0 > 10 70
+G4WT0 > 11 43
+G4WT0 > 12 40
+G4WT0 > 13 27
+G4WT0 > 14 62
+G4WT0 > 15 38
+G4WT0 > 16 68
+G4WT0 > 17 46
+G4WT0 > 18 52
+G4WT0 > 19 51
+G4WT0 > 20 23
+G4WT0 > 21 50
+G4WT0 > 22 27
+G4WT0 > 23 43
+G4WT0 > 24 37
+G4WT0 > 25 29
+G4WT0 > 26 30
+G4WT0 > 27 28
+G4WT0 > 28 32
+G4WT0 > 29 27
+G4WT0 > 30 33
+G4WT0 > 31 45
+G4WT0 > Sum 1375
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1375
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5340
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3965
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (-2.06598,-0.54872,-63.5436)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 76
+G4WT0 > 1 39
+G4WT0 > 2 77
+G4WT0 > 3 69
+G4WT0 > 4 56
+G4WT0 > 5 71
+G4WT0 > 6 45
+G4WT0 > 7 54
+G4WT0 > 8 70
+G4WT0 > 9 44
+G4WT0 > 10 43
+G4WT0 > 11 74
+G4WT0 > 12 57
+G4WT0 > 13 53
+G4WT0 > 14 58
+G4WT0 > 15 77
+G4WT0 > 16 16
+G4WT0 > 17 25
+G4WT0 > 18 57
+G4WT0 > 19 44
+G4WT0 > 20 42
+G4WT0 > 21 63
+G4WT0 > 22 47
+G4WT0 > 23 28
+G4WT0 > 24 68
+G4WT0 > 25 49
+G4WT0 > 26 23
+G4WT0 > 27 26
+G4WT0 > 28 40
+G4WT0 > 29 31
+G4WT0 > 30 19
+G4WT0 > 31 18
+G4WT0 > Sum 1559
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1559
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5672
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4113
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (1.76057,1.60456,-95.6718)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 52
+G4WT1 > 1 84
+G4WT1 > 2 76
+G4WT1 > 3 78
+G4WT1 > 4 49
+G4WT1 > 5 11
+G4WT1 > 6 52
+G4WT1 > 7 83
+G4WT1 > 8 97
+G4WT1 > 9 77
+G4WT1 > 10 86
+G4WT1 > 11 41
+G4WT1 > 12 77
+G4WT1 > 13 42
+G4WT1 > 14 33
+G4WT1 > 15 22
+G4WT1 > 16 23
+G4WT1 > 17 40
+G4WT1 > 18 50
+G4WT1 > 19 42
+G4WT1 > 20 25
+G4WT1 > 21 24
+G4WT1 > 22 30
+G4WT1 > 23 23
+G4WT1 > 24 18
+G4WT1 > 25 46
+G4WT1 > 26 22
+G4WT1 > 27 25
+G4WT1 > 28 43
+G4WT1 > 29 21
+G4WT1 > 30 19
+G4WT1 > 31 16
+G4WT1 > Sum 1427
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1427
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5674
+G4WT1 > 	Number of photons produced by cerenkov in this event : 1
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4248
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (0.620928,-2.79139,-88.6071)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 45
+G4WT1 > 1 67
+G4WT1 > 2 29
+G4WT1 > 3 82
+G4WT1 > 4 48
+G4WT1 > 5 45
+G4WT1 > 6 18
+G4WT1 > 7 92
+G4WT1 > 8 75
+G4WT1 > 9 77
+G4WT1 > 10 37
+G4WT1 > 11 41
+G4WT1 > 12 39
+G4WT1 > 13 74
+G4WT1 > 14 26
+G4WT1 > 15 67
+G4WT1 > 16 42
+G4WT1 > 17 40
+G4WT1 > 18 62
+G4WT1 > 19 35
+G4WT1 > 20 29
+G4WT1 > 21 41
+G4WT1 > 22 35
+G4WT1 > 23 22
+G4WT1 > 24 22
+G4WT1 > 25 38
+G4WT1 > 26 37
+G4WT1 > 27 43
+G4WT1 > 28 27
+G4WT1 > 29 32
+G4WT1 > 30 20
+G4WT1 > 31 27
+G4WT1 > Sum 1414
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1414
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5537
+G4WT1 > 	Number of photons produced by cerenkov in this event : 1
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4124
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (0.696161,0.228941,-104.644)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 88
+G4WT0 > 1 49
+G4WT0 > 2 102
+G4WT0 > 3 34
+G4WT0 > 4 70
+G4WT0 > 5 94
+G4WT0 > 6 51
+G4WT0 > 7 36
+G4WT0 > 8 44
+G4WT0 > 9 42
+G4WT0 > 10 84
+G4WT0 > 11 21
+G4WT0 > 12 51
+G4WT0 > 13 77
+G4WT0 > 14 13
+G4WT0 > 15 23
+G4WT0 > 16 78
+G4WT0 > 17 49
+G4WT0 > 18 36
+G4WT0 > 19 25
+G4WT0 > 20 22
+G4WT0 > 21 33
+G4WT0 > 22 47
+G4WT0 > 23 13
+G4WT0 > 24 26
+G4WT0 > 25 17
+G4WT0 > 26 83
+G4WT0 > 27 12
+G4WT0 > 28 26
+G4WT0 > 29 38
+G4WT0 > 30 19
+G4WT0 > 31 8
+G4WT0 > Sum 1411
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1411
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5581
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4170
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-18.5963,-4.49566,-75.9427)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 67
+G4WT1 > 1 70
+G4WT1 > 2 78
+G4WT1 > 3 88
+G4WT1 > 4 38
+G4WT1 > 5 60
+G4WT1 > 6 34
+G4WT1 > 7 87
+G4WT1 > 8 51
+G4WT1 > 9 36
+G4WT1 > 10 78
+G4WT1 > 11 19
+G4WT1 > 12 45
+G4WT1 > 13 27
+G4WT1 > 14 32
+G4WT1 > 15 37
+G4WT1 > 16 72
+G4WT1 > 17 60
+G4WT1 > 18 42
+G4WT1 > 19 19
+G4WT1 > 20 45
+G4WT1 > 21 18
+G4WT1 > 22 43
+G4WT1 > 23 31
+G4WT1 > 24 45
+G4WT1 > 25 21
+G4WT1 > 26 28
+G4WT1 > 27 49
+G4WT1 > 28 25
+G4WT1 > 29 14
+G4WT1 > 30 40
+G4WT1 > 31 20
+G4WT1 > Sum 1419
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1419
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5405
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 3986
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (0.0289893,-0.0655667,-102.687)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 21
+G4WT0 > 1 40
+G4WT0 > 2 79
+G4WT0 > 3 107
+G4WT0 > 4 89
+G4WT0 > 5 73
+G4WT0 > 6 93
+G4WT0 > 7 54
+G4WT0 > 8 40
+G4WT0 > 9 43
+G4WT0 > 10 15
+G4WT0 > 11 38
+G4WT0 > 12 46
+G4WT0 > 13 38
+G4WT0 > 14 47
+G4WT0 > 15 78
+G4WT0 > 16 47
+G4WT0 > 17 78
+G4WT0 > 18 48
+G4WT0 > 19 26
+G4WT0 > 20 42
+G4WT0 > 21 89
+G4WT0 > 22 41
+G4WT0 > 23 21
+G4WT0 > 24 13
+G4WT0 > 25 31
+G4WT0 > 26 15
+G4WT0 > 27 19
+G4WT0 > 28 19
+G4WT0 > 29 15
+G4WT0 > 30 24
+G4WT0 > 31 19
+G4WT0 > Sum 1448
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1448
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5733
+G4WT0 > 	Number of photons produced by cerenkov in this event : 1
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4286
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (24.3836,-7.02988,-98.464)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 78
+G4WT1 > 1 108
+G4WT1 > 2 30
+G4WT1 > 3 99
+G4WT1 > 4 138
+G4WT1 > 5 66
+G4WT1 > 6 37
+G4WT1 > 7 33
+G4WT1 > 8 41
+G4WT1 > 9 50
+G4WT1 > 10 25
+G4WT1 > 11 17
+G4WT1 > 12 69
+G4WT1 > 13 25
+G4WT1 > 14 28
+G4WT1 > 15 21
+G4WT1 > 16 70
+G4WT1 > 17 74
+G4WT1 > 18 25
+G4WT1 > 19 31
+G4WT1 > 20 31
+G4WT1 > 21 16
+G4WT1 > 22 46
+G4WT1 > 23 32
+G4WT1 > 24 14
+G4WT1 > 25 19
+G4WT1 > 26 32
+G4WT1 > 27 51
+G4WT1 > 28 34
+G4WT1 > 29 19
+G4WT1 > 30 29
+G4WT1 > 31 15
+G4WT1 > Sum 1403
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1403
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5610
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4207
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (-0.0269766,0.015373,-40.265)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 50
+G4WT0 > 1 54
+G4WT0 > 2 53
+G4WT0 > 3 28
+G4WT0 > 4 33
+G4WT0 > 5 71
+G4WT0 > 6 58
+G4WT0 > 7 58
+G4WT0 > 8 29
+G4WT0 > 9 62
+G4WT0 > 10 46
+G4WT0 > 11 45
+G4WT0 > 12 55
+G4WT0 > 13 57
+G4WT0 > 14 32
+G4WT0 > 15 55
+G4WT0 > 16 34
+G4WT0 > 17 62
+G4WT0 > 18 40
+G4WT0 > 19 30
+G4WT0 > 20 66
+G4WT0 > 21 67
+G4WT0 > 22 81
+G4WT0 > 23 50
+G4WT0 > 24 52
+G4WT0 > 25 40
+G4WT0 > 26 25
+G4WT0 > 27 59
+G4WT0 > 28 41
+G4WT0 > 29 37
+G4WT0 > 30 20
+G4WT0 > 31 40
+G4WT0 > Sum 1530
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1530
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5692
+G4WT0 > 	Number of photons produced by cerenkov in this event : 1
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4163
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (0.0210113,-0.0155796,-108.096)
+G4WT1 > 	Total energy deposition in scintillator : 282.377 (keV)
+G4WT1 > 0 58
+G4WT1 > 1 27
+G4WT1 > 2 20
+G4WT1 > 3 47
+G4WT1 > 4 41
+G4WT1 > 5 60
+G4WT1 > 6 15
+G4WT1 > 7 41
+G4WT1 > 8 49
+G4WT1 > 9 16
+G4WT1 > 10 17
+G4WT1 > 11 26
+G4WT1 > 12 23
+G4WT1 > 13 21
+G4WT1 > 14 10
+G4WT1 > 15 12
+G4WT1 > 16 48
+G4WT1 > 17 29
+G4WT1 > 18 43
+G4WT1 > 19 29
+G4WT1 > 20 15
+G4WT1 > 21 24
+G4WT1 > 22 8
+G4WT1 > 23 7
+G4WT1 > 24 12
+G4WT1 > 25 15
+G4WT1 > 26 8
+G4WT1 > 27 23
+G4WT1 > 28 8
+G4WT1 > 29 11
+G4WT1 > 30 4
+G4WT1 > 31 6
+G4WT1 > Sum 773
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 773
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 3218
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 2445
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (10.9891,-0.580858,-32.3417)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 62
+G4WT0 > 1 37
+G4WT0 > 2 52
+G4WT0 > 3 56
+G4WT0 > 4 68
+G4WT0 > 5 65
+G4WT0 > 6 50
+G4WT0 > 7 33
+G4WT0 > 8 59
+G4WT0 > 9 34
+G4WT0 > 10 61
+G4WT0 > 11 36
+G4WT0 > 12 45
+G4WT0 > 13 45
+G4WT0 > 14 64
+G4WT0 > 15 58
+G4WT0 > 16 47
+G4WT0 > 17 43
+G4WT0 > 18 31
+G4WT0 > 19 68
+G4WT0 > 20 64
+G4WT0 > 21 60
+G4WT0 > 22 24
+G4WT0 > 23 51
+G4WT0 > 24 30
+G4WT0 > 25 54
+G4WT0 > 26 51
+G4WT0 > 27 29
+G4WT0 > 28 26
+G4WT0 > 29 42
+G4WT0 > 30 23
+G4WT0 > 31 24
+G4WT0 > Sum 1492
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1492
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5489
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3997
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (0.797726,-0.632285,-56.353)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 31
+G4WT1 > 1 55
+G4WT1 > 2 49
+G4WT1 > 3 78
+G4WT1 > 4 42
+G4WT1 > 5 53
+G4WT1 > 6 18
+G4WT1 > 7 27
+G4WT1 > 8 64
+G4WT1 > 9 74
+G4WT1 > 10 41
+G4WT1 > 11 65
+G4WT1 > 12 52
+G4WT1 > 13 60
+G4WT1 > 14 20
+G4WT1 > 15 58
+G4WT1 > 16 58
+G4WT1 > 17 38
+G4WT1 > 18 56
+G4WT1 > 19 29
+G4WT1 > 20 17
+G4WT1 > 21 46
+G4WT1 > 22 70
+G4WT1 > 23 46
+G4WT1 > 24 42
+G4WT1 > 25 65
+G4WT1 > 26 27
+G4WT1 > 27 38
+G4WT1 > 28 63
+G4WT1 > 29 19
+G4WT1 > 30 54
+G4WT1 > 31 18
+G4WT1 > Sum 1473
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1473
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5583
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4110
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (-0.306651,-30.2632,-14.8049)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 45
+G4WT0 > 1 65
+G4WT0 > 2 23
+G4WT0 > 3 34
+G4WT0 > 4 62
+G4WT0 > 5 40
+G4WT0 > 6 40
+G4WT0 > 7 54
+G4WT0 > 8 44
+G4WT0 > 9 56
+G4WT0 > 10 52
+G4WT0 > 11 36
+G4WT0 > 12 41
+G4WT0 > 13 72
+G4WT0 > 14 44
+G4WT0 > 15 55
+G4WT0 > 16 42
+G4WT0 > 17 35
+G4WT0 > 18 28
+G4WT0 > 19 55
+G4WT0 > 20 41
+G4WT0 > 21 46
+G4WT0 > 22 76
+G4WT0 > 23 46
+G4WT0 > 24 33
+G4WT0 > 25 41
+G4WT0 > 26 50
+G4WT0 > 27 41
+G4WT0 > 28 35
+G4WT0 > 29 40
+G4WT0 > 30 41
+G4WT0 > 31 32
+G4WT0 > Sum 1445
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1445
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5647
+G4WT0 > 	Number of photons produced by cerenkov in this event : 2
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4204
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (0.00785288,0.0279465,-89.1419)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 89
+G4WT1 > 1 69
+G4WT1 > 2 22
+G4WT1 > 3 41
+G4WT1 > 4 46
+G4WT1 > 5 36
+G4WT1 > 6 83
+G4WT1 > 7 49
+G4WT1 > 8 43
+G4WT1 > 9 63
+G4WT1 > 10 40
+G4WT1 > 11 33
+G4WT1 > 12 21
+G4WT1 > 13 44
+G4WT1 > 14 38
+G4WT1 > 15 73
+G4WT1 > 16 21
+G4WT1 > 17 82
+G4WT1 > 18 47
+G4WT1 > 19 87
+G4WT1 > 20 79
+G4WT1 > 21 35
+G4WT1 > 22 35
+G4WT1 > 23 43
+G4WT1 > 24 16
+G4WT1 > 25 23
+G4WT1 > 26 44
+G4WT1 > 27 46
+G4WT1 > 28 37
+G4WT1 > 29 31
+G4WT1 > 30 24
+G4WT1 > 31 24
+G4WT1 > Sum 1464
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1464
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5629
+G4WT1 > 	Number of photons produced by cerenkov in this event : 1
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4166
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (-4.86276,-11.1848,-61.1495)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 29
+G4WT0 > 1 36
+G4WT0 > 2 55
+G4WT0 > 3 55
+G4WT0 > 4 82
+G4WT0 > 5 73
+G4WT0 > 6 41
+G4WT0 > 7 53
+G4WT0 > 8 56
+G4WT0 > 9 29
+G4WT0 > 10 47
+G4WT0 > 11 72
+G4WT0 > 12 41
+G4WT0 > 13 46
+G4WT0 > 14 56
+G4WT0 > 15 65
+G4WT0 > 16 19
+G4WT0 > 17 27
+G4WT0 > 18 49
+G4WT0 > 19 19
+G4WT0 > 20 67
+G4WT0 > 21 33
+G4WT0 > 22 42
+G4WT0 > 23 71
+G4WT0 > 24 48
+G4WT0 > 25 49
+G4WT0 > 26 68
+G4WT0 > 27 23
+G4WT0 > 28 37
+G4WT0 > 29 45
+G4WT0 > 30 21
+G4WT0 > 31 45
+G4WT0 > Sum 1499
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1499
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5322
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3823
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (0.0196003,-0.00289561,-62.4963)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 53
+G4WT1 > 1 57
+G4WT1 > 2 59
+G4WT1 > 3 62
+G4WT1 > 4 58
+G4WT1 > 5 57
+G4WT1 > 6 29
+G4WT1 > 7 62
+G4WT1 > 8 72
+G4WT1 > 9 44
+G4WT1 > 10 61
+G4WT1 > 11 31
+G4WT1 > 12 49
+G4WT1 > 13 40
+G4WT1 > 14 24
+G4WT1 > 15 57
+G4WT1 > 16 24
+G4WT1 > 17 44
+G4WT1 > 18 48
+G4WT1 > 19 42
+G4WT1 > 20 63
+G4WT1 > 21 46
+G4WT1 > 22 65
+G4WT1 > 23 48
+G4WT1 > 24 43
+G4WT1 > 25 29
+G4WT1 > 26 61
+G4WT1 > 27 30
+G4WT1 > 28 25
+G4WT1 > 29 58
+G4WT1 > 30 19
+G4WT1 > 31 23
+G4WT1 > Sum 1483
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1483
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5598
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4115
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (-1.80396,5.71238,-39.2199)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 31
+G4WT0 > 1 58
+G4WT0 > 2 65
+G4WT0 > 3 57
+G4WT0 > 4 56
+G4WT0 > 5 72
+G4WT0 > 6 42
+G4WT0 > 7 31
+G4WT0 > 8 59
+G4WT0 > 9 71
+G4WT0 > 10 55
+G4WT0 > 11 28
+G4WT0 > 12 50
+G4WT0 > 13 59
+G4WT0 > 14 57
+G4WT0 > 15 59
+G4WT0 > 16 49
+G4WT0 > 17 60
+G4WT0 > 18 58
+G4WT0 > 19 24
+G4WT0 > 20 34
+G4WT0 > 21 37
+G4WT0 > 22 57
+G4WT0 > 23 31
+G4WT0 > 24 42
+G4WT0 > 25 35
+G4WT0 > 26 62
+G4WT0 > 27 30
+G4WT0 > 28 43
+G4WT0 > 29 27
+G4WT0 > 30 41
+G4WT0 > 31 28
+G4WT0 > Sum 1508
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1508
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5617
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4109
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (0.0160586,-0.00657516,-109.257)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 75
+G4WT1 > 1 24
+G4WT1 > 2 24
+G4WT1 > 3 36
+G4WT1 > 4 80
+G4WT1 > 5 22
+G4WT1 > 6 45
+G4WT1 > 7 77
+G4WT1 > 8 86
+G4WT1 > 9 48
+G4WT1 > 10 35
+G4WT1 > 11 84
+G4WT1 > 12 35
+G4WT1 > 13 20
+G4WT1 > 14 99
+G4WT1 > 15 32
+G4WT1 > 16 10
+G4WT1 > 17 42
+G4WT1 > 18 73
+G4WT1 > 19 36
+G4WT1 > 20 19
+G4WT1 > 21 35
+G4WT1 > 22 38
+G4WT1 > 23 24
+G4WT1 > 24 22
+G4WT1 > 25 75
+G4WT1 > 26 12
+G4WT1 > 27 21
+G4WT1 > 28 43
+G4WT1 > 29 44
+G4WT1 > 30 14
+G4WT1 > 31 9
+G4WT1 > Sum 1339
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1339
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5445
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4106
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (7.90627,-6.71463,-101.317)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 36
+G4WT0 > 1 65
+G4WT0 > 2 81
+G4WT0 > 3 38
+G4WT0 > 4 114
+G4WT0 > 5 38
+G4WT0 > 6 38
+G4WT0 > 7 86
+G4WT0 > 8 21
+G4WT0 > 9 23
+G4WT0 > 10 80
+G4WT0 > 11 48
+G4WT0 > 12 31
+G4WT0 > 13 37
+G4WT0 > 14 43
+G4WT0 > 15 21
+G4WT0 > 16 75
+G4WT0 > 17 15
+G4WT0 > 18 49
+G4WT0 > 19 19
+G4WT0 > 20 32
+G4WT0 > 21 71
+G4WT0 > 22 38
+G4WT0 > 23 21
+G4WT0 > 24 41
+G4WT0 > 25 26
+G4WT0 > 26 21
+G4WT0 > 27 75
+G4WT0 > 28 17
+G4WT0 > 29 13
+G4WT0 > 30 33
+G4WT0 > 31 11
+G4WT0 > Sum 1357
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1357
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5477
+G4WT0 > 	Number of photons produced by cerenkov in this event : 1
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4121
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (16.1518,14.148,-15.8891)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 48
+G4WT1 > 1 52
+G4WT1 > 2 48
+G4WT1 > 3 45
+G4WT1 > 4 43
+G4WT1 > 5 77
+G4WT1 > 6 36
+G4WT1 > 7 47
+G4WT1 > 8 38
+G4WT1 > 9 40
+G4WT1 > 10 35
+G4WT1 > 11 72
+G4WT1 > 12 55
+G4WT1 > 13 45
+G4WT1 > 14 59
+G4WT1 > 15 28
+G4WT1 > 16 27
+G4WT1 > 17 37
+G4WT1 > 18 46
+G4WT1 > 19 47
+G4WT1 > 20 57
+G4WT1 > 21 34
+G4WT1 > 22 57
+G4WT1 > 23 45
+G4WT1 > 24 48
+G4WT1 > 25 47
+G4WT1 > 26 53
+G4WT1 > 27 32
+G4WT1 > 28 48
+G4WT1 > 29 35
+G4WT1 > 30 31
+G4WT1 > 31 42
+G4WT1 > Sum 1454
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1454
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5444
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 3990
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (1.24717,0.227333,17.1132)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 44
+G4WT0 > 1 48
+G4WT0 > 2 58
+G4WT0 > 3 44
+G4WT0 > 4 52
+G4WT0 > 5 43
+G4WT0 > 6 35
+G4WT0 > 7 56
+G4WT0 > 8 47
+G4WT0 > 9 37
+G4WT0 > 10 32
+G4WT0 > 11 48
+G4WT0 > 12 35
+G4WT0 > 13 54
+G4WT0 > 14 32
+G4WT0 > 15 37
+G4WT0 > 16 44
+G4WT0 > 17 42
+G4WT0 > 18 30
+G4WT0 > 19 42
+G4WT0 > 20 57
+G4WT0 > 21 51
+G4WT0 > 22 57
+G4WT0 > 23 57
+G4WT0 > 24 39
+G4WT0 > 25 50
+G4WT0 > 26 49
+G4WT0 > 27 40
+G4WT0 > 28 44
+G4WT0 > 29 54
+G4WT0 > 30 48
+G4WT0 > 31 47
+G4WT0 > Sum 1453
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1453
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5363
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3910
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-2.96637,-0.323911,-66.2957)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 77
+G4WT1 > 1 63
+G4WT1 > 2 67
+G4WT1 > 3 46
+G4WT1 > 4 63
+G4WT1 > 5 63
+G4WT1 > 6 64
+G4WT1 > 7 72
+G4WT1 > 8 52
+G4WT1 > 9 58
+G4WT1 > 10 59
+G4WT1 > 11 50
+G4WT1 > 12 29
+G4WT1 > 13 31
+G4WT1 > 14 46
+G4WT1 > 15 74
+G4WT1 > 16 64
+G4WT1 > 17 44
+G4WT1 > 18 61
+G4WT1 > 19 76
+G4WT1 > 20 28
+G4WT1 > 21 28
+G4WT1 > 22 59
+G4WT1 > 23 55
+G4WT1 > 24 23
+G4WT1 > 25 49
+G4WT1 > 26 24
+G4WT1 > 27 41
+G4WT1 > 28 33
+G4WT1 > 29 23
+G4WT1 > 30 25
+G4WT1 > 31 37
+G4WT1 > Sum 1584
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1584
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5729
+G4WT1 > 	Number of photons produced by cerenkov in this event : 2
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4147
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (0.0157679,-0.151735,104.849)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 52
+G4WT0 > 1 38
+G4WT0 > 2 95
+G4WT0 > 3 86
+G4WT0 > 4 35
+G4WT0 > 5 14
+G4WT0 > 6 93
+G4WT0 > 7 75
+G4WT0 > 8 84
+G4WT0 > 9 85
+G4WT0 > 10 16
+G4WT0 > 11 20
+G4WT0 > 12 82
+G4WT0 > 13 82
+G4WT0 > 14 18
+G4WT0 > 15 24
+G4WT0 > 16 40
+G4WT0 > 17 40
+G4WT0 > 18 35
+G4WT0 > 19 24
+G4WT0 > 20 23
+G4WT0 > 21 12
+G4WT0 > 22 36
+G4WT0 > 23 27
+G4WT0 > 24 34
+G4WT0 > 25 47
+G4WT0 > 26 41
+G4WT0 > 27 23
+G4WT0 > 28 42
+G4WT0 > 29 31
+G4WT0 > 30 12
+G4WT0 > 31 14
+G4WT0 > Sum 1380
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1380
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5686
+G4WT0 > 	Number of photons produced by cerenkov in this event : 1
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4307
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (0.0367511,-0.0117993,-54.5664)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 64
+G4WT1 > 1 61
+G4WT1 > 2 61
+G4WT1 > 3 59
+G4WT1 > 4 54
+G4WT1 > 5 61
+G4WT1 > 6 58
+G4WT1 > 7 23
+G4WT1 > 8 20
+G4WT1 > 9 36
+G4WT1 > 10 66
+G4WT1 > 11 22
+G4WT1 > 12 63
+G4WT1 > 13 33
+G4WT1 > 14 54
+G4WT1 > 15 25
+G4WT1 > 16 32
+G4WT1 > 17 63
+G4WT1 > 18 29
+G4WT1 > 19 67
+G4WT1 > 20 70
+G4WT1 > 21 60
+G4WT1 > 22 55
+G4WT1 > 23 41
+G4WT1 > 24 52
+G4WT1 > 25 53
+G4WT1 > 26 65
+G4WT1 > 27 24
+G4WT1 > 28 44
+G4WT1 > 29 45
+G4WT1 > 30 36
+G4WT1 > 31 21
+G4WT1 > Sum 1517
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1517
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5606
+G4WT1 > 	Number of photons produced by cerenkov in this event : 2
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4091
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (0.274565,-16.8937,-73.438)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 62
+G4WT0 > 1 51
+G4WT0 > 2 28
+G4WT0 > 3 87
+G4WT0 > 4 38
+G4WT0 > 5 49
+G4WT0 > 6 41
+G4WT0 > 7 67
+G4WT0 > 8 26
+G4WT0 > 9 74
+G4WT0 > 10 40
+G4WT0 > 11 67
+G4WT0 > 12 44
+G4WT0 > 13 43
+G4WT0 > 14 86
+G4WT0 > 15 39
+G4WT0 > 16 75
+G4WT0 > 17 37
+G4WT0 > 18 28
+G4WT0 > 19 52
+G4WT0 > 20 48
+G4WT0 > 21 20
+G4WT0 > 22 28
+G4WT0 > 23 79
+G4WT0 > 24 69
+G4WT0 > 25 20
+G4WT0 > 26 44
+G4WT0 > 27 65
+G4WT0 > 28 31
+G4WT0 > 29 16
+G4WT0 > 30 37
+G4WT0 > 31 15
+G4WT0 > Sum 1506
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1506
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5440
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3934
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-14.5891,21.4168,27.0861)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 44
+G4WT1 > 1 48
+G4WT1 > 2 70
+G4WT1 > 3 69
+G4WT1 > 4 54
+G4WT1 > 5 81
+G4WT1 > 6 51
+G4WT1 > 7 75
+G4WT1 > 8 84
+G4WT1 > 9 49
+G4WT1 > 10 59
+G4WT1 > 11 46
+G4WT1 > 12 29
+G4WT1 > 13 41
+G4WT1 > 14 25
+G4WT1 > 15 58
+G4WT1 > 16 48
+G4WT1 > 17 50
+G4WT1 > 18 47
+G4WT1 > 19 37
+G4WT1 > 20 28
+G4WT1 > 21 40
+G4WT1 > 22 43
+G4WT1 > 23 40
+G4WT1 > 24 34
+G4WT1 > 25 20
+G4WT1 > 26 29
+G4WT1 > 27 57
+G4WT1 > 28 40
+G4WT1 > 29 52
+G4WT1 > 30 24
+G4WT1 > 31 35
+G4WT1 > Sum 1507
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1507
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5548
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4041
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (0.16675,-2.40644,-79.7512)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 28
+G4WT0 > 1 51
+G4WT0 > 2 42
+G4WT0 > 3 35
+G4WT0 > 4 52
+G4WT0 > 5 61
+G4WT0 > 6 49
+G4WT0 > 7 28
+G4WT0 > 8 63
+G4WT0 > 9 43
+G4WT0 > 10 67
+G4WT0 > 11 43
+G4WT0 > 12 37
+G4WT0 > 13 28
+G4WT0 > 14 64
+G4WT0 > 15 37
+G4WT0 > 16 69
+G4WT0 > 17 41
+G4WT0 > 18 51
+G4WT0 > 19 17
+G4WT0 > 20 19
+G4WT0 > 21 38
+G4WT0 > 22 48
+G4WT0 > 23 60
+G4WT0 > 24 40
+G4WT0 > 25 45
+G4WT0 > 26 66
+G4WT0 > 27 25
+G4WT0 > 28 74
+G4WT0 > 29 25
+G4WT0 > 30 36
+G4WT0 > 31 23
+G4WT0 > Sum 1405
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1405
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5242
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3837
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-0.0324369,0.00486206,-35.9066)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 53
+G4WT1 > 1 54
+G4WT1 > 2 57
+G4WT1 > 3 57
+G4WT1 > 4 62
+G4WT1 > 5 59
+G4WT1 > 6 69
+G4WT1 > 7 31
+G4WT1 > 8 39
+G4WT1 > 9 53
+G4WT1 > 10 51
+G4WT1 > 11 38
+G4WT1 > 12 65
+G4WT1 > 13 64
+G4WT1 > 14 52
+G4WT1 > 15 57
+G4WT1 > 16 52
+G4WT1 > 17 55
+G4WT1 > 18 49
+G4WT1 > 19 64
+G4WT1 > 20 31
+G4WT1 > 21 37
+G4WT1 > 22 63
+G4WT1 > 23 48
+G4WT1 > 24 49
+G4WT1 > 25 32
+G4WT1 > 26 61
+G4WT1 > 27 32
+G4WT1 > 28 45
+G4WT1 > 29 58
+G4WT1 > 30 41
+G4WT1 > 31 24
+G4WT1 > Sum 1602
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1602
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5631
+G4WT1 > 	Number of photons produced by cerenkov in this event : 1
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4030
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (4.52836,-10.8506,-24.2152)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 50
+G4WT0 > 1 21
+G4WT0 > 2 31
+G4WT0 > 3 52
+G4WT0 > 4 48
+G4WT0 > 5 55
+G4WT0 > 6 32
+G4WT0 > 7 60
+G4WT0 > 8 25
+G4WT0 > 9 52
+G4WT0 > 10 43
+G4WT0 > 11 23
+G4WT0 > 12 39
+G4WT0 > 13 62
+G4WT0 > 14 57
+G4WT0 > 15 58
+G4WT0 > 16 50
+G4WT0 > 17 54
+G4WT0 > 18 39
+G4WT0 > 19 64
+G4WT0 > 20 35
+G4WT0 > 21 47
+G4WT0 > 22 45
+G4WT0 > 23 46
+G4WT0 > 24 73
+G4WT0 > 25 30
+G4WT0 > 26 33
+G4WT0 > 27 53
+G4WT0 > 28 35
+G4WT0 > 29 36
+G4WT0 > 30 31
+G4WT0 > 31 38
+G4WT0 > Sum 1417
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1417
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5502
+G4WT0 > 	Number of photons produced by cerenkov in this event : 1
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 4086
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-0.119951,15.1472,-26.4376)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 48
+G4WT1 > 1 66
+G4WT1 > 2 43
+G4WT1 > 3 48
+G4WT1 > 4 60
+G4WT1 > 5 50
+G4WT1 > 6 53
+G4WT1 > 7 55
+G4WT1 > 8 31
+G4WT1 > 9 52
+G4WT1 > 10 36
+G4WT1 > 11 64
+G4WT1 > 12 47
+G4WT1 > 13 65
+G4WT1 > 14 34
+G4WT1 > 15 37
+G4WT1 > 16 27
+G4WT1 > 17 61
+G4WT1 > 18 47
+G4WT1 > 19 62
+G4WT1 > 20 47
+G4WT1 > 21 28
+G4WT1 > 22 23
+G4WT1 > 23 29
+G4WT1 > 24 38
+G4WT1 > 25 67
+G4WT1 > 26 35
+G4WT1 > 27 50
+G4WT1 > 28 45
+G4WT1 > 29 36
+G4WT1 > 30 24
+G4WT1 > 31 34
+G4WT1 > Sum 1442
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1442
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5186
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 3744
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (10.4792,-0.846459,-60.5784)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 74
+G4WT0 > 1 61
+G4WT0 > 2 73
+G4WT0 > 3 40
+G4WT0 > 4 46
+G4WT0 > 5 25
+G4WT0 > 6 67
+G4WT0 > 7 67
+G4WT0 > 8 77
+G4WT0 > 9 37
+G4WT0 > 10 54
+G4WT0 > 11 59
+G4WT0 > 12 21
+G4WT0 > 13 26
+G4WT0 > 14 49
+G4WT0 > 15 39
+G4WT0 > 16 47
+G4WT0 > 17 24
+G4WT0 > 18 42
+G4WT0 > 19 54
+G4WT0 > 20 64
+G4WT0 > 21 58
+G4WT0 > 22 17
+G4WT0 > 23 46
+G4WT0 > 24 25
+G4WT0 > 25 41
+G4WT0 > 26 18
+G4WT0 > 27 50
+G4WT0 > 28 28
+G4WT0 > 29 44
+G4WT0 > 30 46
+G4WT0 > 31 18
+G4WT0 > Sum 1437
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1437
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5244
+G4WT0 > 	Number of photons produced by cerenkov in this event : 1
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3808
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-3.0829,-0.682996,-81.124)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 21
+G4WT1 > 1 52
+G4WT1 > 2 50
+G4WT1 > 3 69
+G4WT1 > 4 50
+G4WT1 > 5 47
+G4WT1 > 6 25
+G4WT1 > 7 78
+G4WT1 > 8 77
+G4WT1 > 9 48
+G4WT1 > 10 47
+G4WT1 > 11 23
+G4WT1 > 12 46
+G4WT1 > 13 70
+G4WT1 > 14 44
+G4WT1 > 15 74
+G4WT1 > 16 38
+G4WT1 > 17 37
+G4WT1 > 18 73
+G4WT1 > 19 73
+G4WT1 > 20 33
+G4WT1 > 21 23
+G4WT1 > 22 35
+G4WT1 > 23 23
+G4WT1 > 24 50
+G4WT1 > 25 71
+G4WT1 > 26 48
+G4WT1 > 27 19
+G4WT1 > 28 89
+G4WT1 > 29 27
+G4WT1 > 30 21
+G4WT1 > 31 32
+G4WT1 > Sum 1513
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1513
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5431
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 3918
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (-9.19254,-7.36936,-83.242)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 60
+G4WT0 > 1 61
+G4WT0 > 2 35
+G4WT0 > 3 71
+G4WT0 > 4 87
+G4WT0 > 5 56
+G4WT0 > 6 25
+G4WT0 > 7 81
+G4WT0 > 8 39
+G4WT0 > 9 66
+G4WT0 > 10 48
+G4WT0 > 11 67
+G4WT0 > 12 42
+G4WT0 > 13 17
+G4WT0 > 14 83
+G4WT0 > 15 45
+G4WT0 > 16 100
+G4WT0 > 17 37
+G4WT0 > 18 41
+G4WT0 > 19 49
+G4WT0 > 20 33
+G4WT0 > 21 21
+G4WT0 > 22 24
+G4WT0 > 23 36
+G4WT0 > 24 50
+G4WT0 > 25 38
+G4WT0 > 26 48
+G4WT0 > 27 24
+G4WT0 > 28 21
+G4WT0 > 29 33
+G4WT0 > 30 22
+G4WT0 > 31 21
+G4WT0 > Sum 1481
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1481
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5335
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3854
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT1 > 	Energy weighted position of hits in LXe : (-48.5318,-30.1371,-59.7321)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 80
+G4WT1 > 1 37
+G4WT1 > 2 58
+G4WT1 > 3 48
+G4WT1 > 4 46
+G4WT1 > 5 83
+G4WT1 > 6 96
+G4WT1 > 7 41
+G4WT1 > 8 10
+G4WT1 > 9 38
+G4WT1 > 10 48
+G4WT1 > 11 185
+G4WT1 > 12 44
+G4WT1 > 13 26
+G4WT1 > 14 47
+G4WT1 > 15 30
+G4WT1 > 16 44
+G4WT1 > 17 51
+G4WT1 > 18 34
+G4WT1 > 19 24
+G4WT1 > 20 29
+G4WT1 > 21 33
+G4WT1 > 22 48
+G4WT1 > 23 40
+G4WT1 > 24 21
+G4WT1 > 25 32
+G4WT1 > 26 23
+G4WT1 > 27 18
+G4WT1 > 28 20
+G4WT1 > 29 40
+G4WT1 > 30 18
+G4WT1 > 31 13
+G4WT1 > Sum 1405
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1405
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5320
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 3915
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT0 > 	Energy weighted position of hits in LXe : (7.09664,11.9013,-63.3056)
+G4WT0 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT0 > 0 67
+G4WT0 > 1 46
+G4WT0 > 2 25
+G4WT0 > 3 56
+G4WT0 > 4 48
+G4WT0 > 5 79
+G4WT0 > 6 68
+G4WT0 > 7 40
+G4WT0 > 8 75
+G4WT0 > 9 50
+G4WT0 > 10 44
+G4WT0 > 11 74
+G4WT0 > 12 40
+G4WT0 > 13 23
+G4WT0 > 14 18
+G4WT0 > 15 52
+G4WT0 > 16 48
+G4WT0 > 17 46
+G4WT0 > 18 50
+G4WT0 > 19 57
+G4WT0 > 20 34
+G4WT0 > 21 39
+G4WT0 > 22 69
+G4WT0 > 23 16
+G4WT0 > 24 40
+G4WT0 > 25 28
+G4WT0 > 26 57
+G4WT0 > 27 20
+G4WT0 > 28 60
+G4WT0 > 29 39
+G4WT0 > 30 20
+G4WT0 > 31 26
+G4WT0 > Sum 1454
+G4WT0 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT0 > 	Number of photons that hit PMTs in this event : 1454
+G4WT0 > 	Number of PMTs above threshold(2) : 32
+G4WT0 > 	Number of photons produced by scintillation in this event : 5298
+G4WT0 > 	Number of photons produced by cerenkov in this event : 0
+G4WT0 > 	Number of photons absorbed (OpAbsorption) in this event : 3844
+G4WT0 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT0 > Unacounted for photons in this event : 0
+G4WT0 > Thread-local run terminated.
+G4WT0 > Run Summary
+G4WT0 >   Number of events processed : 49
+G4WT0 >   User=21.3s Real=14.13s Sys=0.03s
+G4WT1 > 	Energy weighted position of hits in LXe : (0.0373768,-0.0443118,-110.822)
+G4WT1 > 	Total energy deposition in scintillator : 511 (keV)
+G4WT1 > 0 41
+G4WT1 > 1 46
+G4WT1 > 2 13
+G4WT1 > 3 27
+G4WT1 > 4 12
+G4WT1 > 5 22
+G4WT1 > 6 79
+G4WT1 > 7 96
+G4WT1 > 8 86
+G4WT1 > 9 41
+G4WT1 > 10 84
+G4WT1 > 11 86
+G4WT1 > 12 93
+G4WT1 > 13 46
+G4WT1 > 14 31
+G4WT1 > 15 89
+G4WT1 > 16 53
+G4WT1 > 17 19
+G4WT1 > 18 35
+G4WT1 > 19 43
+G4WT1 > 20 20
+G4WT1 > 21 33
+G4WT1 > 22 84
+G4WT1 > 23 36
+G4WT1 > 24 22
+G4WT1 > 25 45
+G4WT1 > 26 18
+G4WT1 > 27 21
+G4WT1 > 28 16
+G4WT1 > 29 38
+G4WT1 > 30 5
+G4WT1 > 31 14
+G4WT1 > Sum 1394
+G4WT1 > 	Reconstructed position of hits in LXe : (0,0,0)
+G4WT1 > 	Number of photons that hit PMTs in this event : 1394
+G4WT1 > 	Number of PMTs above threshold(2) : 32
+G4WT1 > 	Number of photons produced by scintillation in this event : 5695
+G4WT1 > 	Number of photons produced by cerenkov in this event : 0
+G4WT1 > 	Number of photons absorbed (OpAbsorption) in this event : 4301
+G4WT1 > 	Number of photons absorbed at boundaries (OpBoundary) in this event : 0
+G4WT1 > Unacounted for photons in this event : 0
+G4WT1 > Thread-local run terminated.
+G4WT1 > Run Summary
+G4WT1 >   Number of events processed : 51
+G4WT1 >   User=21.52s Real=14.44s Sys=0.03s
+ Run terminated.
+Run Summary
+  Number of events processed : 100
+  User=21.52s Real=14.53s Sys=0.03s
+Graphics systems deleted.
+Visualization Manager deleting...
+G4WT1 > ================== Deleting memory pools ===================
+G4WT1 > Number of memory pools allocated: 15; of which, static: 0
+G4WT1 > Dynamic pools deleted: 15 / Total memory freed: 1.6 Mb
+G4WT1 > ============================================================
+G4WT1 > Thread-local UImanager is to be deleted.
+G4WT1 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4WT0 > ================== Deleting memory pools ===================
+G4WT0 > Number of memory pools allocated: 15; of which, static: 0
+G4WT0 > Dynamic pools deleted: 15 / Total memory freed: 2.5 Mb
+G4WT0 > ============================================================
+G4WT0 > Thread-local UImanager is to be deleted.
+G4WT0 > There should not be any thread-local G4cout/G4cerr hereafter.
+G4 kernel has come to Quit state.
+================== Deleting memory pools ===================
+Number of memory pools allocated: 3; of which, static: 0
+Dynamic pools deleted: 3 / Total memory freed: 0.0029 Mb
+============================================================
+RunManagerKernel is deleted. Good bye :)

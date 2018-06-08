@@ -1,0 +1,41 @@
+FILE(REMOVE_RECURSE
+  "CMakeFiles/TNTSIM2_lib.dir/LXe.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeSteppingVerbose.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeDataRecordTree.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeWLSFiber.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/menate_R.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeUserEventInformation.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeActionInitialization.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeScintHit.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeDetectorMessenger.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXePrimaryGeneratorAction.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeSteppingMessenger.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeStackingAction.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeSteppingAction.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeDetectorConstruction.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeEventMessenger.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeMainVolume.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeUserTrackInformation.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeTrajectory.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeEventAction.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeEMPhysics.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXePhysicsList.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeTrackingAction.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXePMTSD.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXePMTHit.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeMuonPhysics.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeGeneralPhysics.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeNuclearPhysics.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeScintSD.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeWLSSlab.cc.o"
+  "CMakeFiles/TNTSIM2_lib.dir/src/LXeRunAction.cc.o"
+  "libTNTSIM2_lib.pdb"
+  "libTNTSIM2_lib.sl"
+  "libTNTSIM2_lib.sl.0.0.0"
+  "libTNTSIM2_lib.sl.0"
+)
+
+# Per-language clean rules from dependency scanning.
+FOREACH(lang CXX)
+  INCLUDE(CMakeFiles/TNTSIM2_lib.dir/cmake_clean_${lang}.cmake OPTIONAL)
+ENDFOREACH(lang)

@@ -1,0 +1,1 @@
+/usr/bin/c++   -fPIC  -fPIC CMakeFiles/mdmTrace.dir/src/mdmTraceApp.cpp.o CMakeFiles/mdmTrace.dir/src/jsoncpp.cpp.o  -o mdmTrace -rdynamic libMDMTrace.so -lc -lgfortran -Wl,-rpath,/home/gacgroup/shuyaota/Geant4/MDMTrace/build 

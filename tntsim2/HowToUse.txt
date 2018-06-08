@@ -1,0 +1,6 @@
+
+cd build
+make
+
+in build, 
+./LXe.out run1.mac (or vis.mac)

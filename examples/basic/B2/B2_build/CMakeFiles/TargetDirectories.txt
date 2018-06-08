@@ -1,0 +1,3 @@
+/home/gacgroup/gchristian/packages/geant/geant4.10.01.p02/examples/basic/B2/B2_build/B2b/CMakeFiles/exampleB2b.dir
+/home/gacgroup/gchristian/packages/geant/geant4.10.01.p02/examples/basic/B2/B2_build/B2a/CMakeFiles/exampleB2a.dir
+/home/gacgroup/gchristian/packages/geant/geant4.10.01.p02/examples/basic/B2/B2_build/CMakeFiles/B2.dir
