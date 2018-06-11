@@ -21,6 +21,13 @@ simulation and to act as a reference for tuning parameters. Some refence
 materials will be left here too, and possibly some data regarding para-
 terpenyl properties.
 
+In order to run this we first need to compile, and to do so we need to change
+directory pointers.
+
+
+
+
+
                         <Some para-Terphenyl Documentation>
 [1] https://www.sciencedirect.com/science/article/pii/S0168900215013832
 [2] https://en.wikipedia.org/wiki/Terphenyl

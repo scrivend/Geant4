@@ -1,0 +1,54 @@
+# -*- mode: shell-script; -*-
+# Macro file for example B1
+# 
+# Can be run in batch, without graphic
+# or interactively: Idle> /control/execute run1.mac
+#
+# Change the default number of workers (in multi-threading mode) 
+# /run/numberOfThreads 20
+/run/initialize
+
+/vis/open OGL 750x600-0+0
+# /vis/open OGLI 900x600-0+0
+# /vis/open DAWNFILE
+/vis/viewer/set/autoRefresh true
+# /vis/viewer/set/background red ! ! 0.2
+/vis/viewer/set/background 0.5 0.5 0.5 0.1
+/vis/verbose errors
+/vis/drawVolume
+/vis/viewer/set/viewpointVector -1 0 0
+/vis/viewer/set/lightsVector -1 0 0
+/vis/viewer/set/style wireframe
+#/vis/viewer/set/style surface
+# /vis/viewer/set/auxiliaryEdge true
+/vis/viewer/set/lineSegmentsPerCircle 100
+/tracking/storeTrajectory
+#/vis/scene/endOfEventAction accumulate
+#/vis/scene/endOfEventAction accumulate 10 # view more events!
+/vis/scene/add/trajectories #shows particle path
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+#/vis/scene/add/hits #colors surfaces that have interaction
+/vis/set/textColour green
+/vis/set/textLayout right
+/vis/scene/add/text2D 0.9 -.9 24 ! ! T4T Simulation 
+#/vis/scene/add/text 0 10 35 cm 18 10 10 Detector
+/vis/scene/add/scale 100 cm   # Simple scale line
+/vis/scene/add/axes    # Simple axes: x=red, y=green, z=blue.
+#/vis/scene/add/logo2D  # Simple logo
+#/vis/geometry/set/visibility Envelope 0 true	
+# /vis/viewer/set/hiddenMarker true
+
+## Set viewing angle!
+#/vis/viewer/set/viewpointThetaPhi 90 0
+/vis/viewer/set/viewpointThetaPhi 50 30 #az:alt
+# /vis/viewer/set/viewpointThetaPhi 135 135
+
+
+/vis/viewer/pan 20 20 cm
+
+/vis/viewer/zoom 0.75  # Zoom in, > 1, Zoom out < 1	
+
+
+/run/beamOn 1000
